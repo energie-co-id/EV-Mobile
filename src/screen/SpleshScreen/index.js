@@ -17,7 +17,7 @@ function SpleshSreen(props) {
         //   await AsyncStorage.clear();
         //   props.navigation.replace('AuthScreen');
         // } else {
-          props.navigation.replace('AppScreen', {screen: 'HomeNavigator'});
+          // props.navigation.replace('AppScreen', {screen: 'HomeNavigator'});
         // }
       } else {
         props.navigation.replace('AuthScreen');
