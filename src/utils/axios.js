@@ -1,9 +1,9 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {LINK_BACKEND} from '@env';
+// import {REACT_APP_LINK_BACKEND} from '@react-native-dotenv';
 
 const axiosApiIntances = axios.create({
-  baseURL: LINK_BACKEND,
+  baseURL: 'https://tiketjauhar.herokuapp.com',
   // baseURL: 'http://192.168.0.140:3001',
 });
 

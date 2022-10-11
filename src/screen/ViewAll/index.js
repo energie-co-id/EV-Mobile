@@ -4,7 +4,7 @@ import {useDispatch} from 'react-redux';
 import {getAllMovie} from '../../store/action/movie';
 import SelectDropdown from 'react-native-select-dropdown';
 import Icon from 'react-native-vector-icons/Feather';
-import {LINK_CLOUDINARY} from '@env';
+// import {REACT_APP_LINK_CLOUDINARY} from '@env';
 import {
   View,
   Text,
@@ -178,7 +178,7 @@ function ViewAll(props) {
           <View style={view.movie} key={item.id}>
             <Image
               source={{
-                uri: `${LINK_CLOUDINARY}${item.image}`,
+                uri: `https://res.cloudinary.com/fazztrack/image/upload/v1655102148/${item.image}`,
               }}
               style={view.card_image}
             />
