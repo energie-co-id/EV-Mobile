@@ -14,7 +14,7 @@ import {
   Image,
   RefreshControl,
   ActivityIndicator,
-  FlatList,
+  // FlatList,
 } from 'react-native';
 
 const wait = timeout => {

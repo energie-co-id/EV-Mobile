@@ -6,7 +6,7 @@ const Stack = createNativeStackNavigator();
 
 import SpleshScreen from '../screen/SpleshScreen';
 import AuthScreen from './auth';
-// import AppScreen from './app';
+import AppScreen from './app';
 
 function MyStackNavigator() {
   return (
@@ -22,11 +22,11 @@ function MyStackNavigator() {
           name="AuthScreen"
           options={{headerShown: false}}
         />
-        {/* <Stack.Screen
+        <Stack.Screen
           component={AppScreen}
           name="AppScreen"
           options={{headerShown: false}}
-        /> */}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
