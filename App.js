@@ -1,130 +1,81 @@
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import React from 'react';
+import MainstackNavigtor from './src/navigation';
+import {PersistGate} from 'redux-persist/integration/react';
 
-const App = () => {
-  return (
-    <NavigationContainer>
-      {/* Rest of your app code */}
-    </NavigationContainer>
-  );
-};
+import {Provider} from 'react-redux';
+import stores from './src/store';
+const {persistor, store} = stores;
 
-export default App;
+// import PushNotification from 'react-native-push-notification';
 
-// /**
-//  * Sample React Native App
-//  * https://github.com/facebook/react-native
-//  *
-//  * @format
-//  * @flow strict-local
-//  */
-
-// import React from 'react';
-// import type {Node} from 'react';
-// import {
-//   SafeAreaView,
-//   ScrollView,
-//   StatusBar,
-//   StyleSheet,
-//   Text,
-//   useColorScheme,
-//   View,
-// } from 'react-native';
-
-// import {
-//   Colors,
-//   DebugInstructions,
-//   Header,
-//   LearnMoreLinks,
-//   ReloadInstructions,
-// } from 'react-native/Libraries/NewAppScreen';
-
-// /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
-//  * LTI update could not be added via codemod */
-// const Section = ({children, title}): Node => {
-//   const isDarkMode = useColorScheme() === 'dark';
-//   return (
-//     <View style={styles.sectionContainer}>
-//       <Text
-//         style={[
-//           styles.sectionTitle,
-//           {
-//             color: isDarkMode ? Colors.white : Colors.black,
-//           },
-//         ]}>
-//         {title}
-//       </Text>
-//       <Text
-//         style={[
-//           styles.sectionDescription,
-//           {
-//             color: isDarkMode ? Colors.light : Colors.dark,
-//           },
-//         ]}>
-//         {children}
-//       </Text>
-//     </View>
-//   );
-// };
-
-// const App: () => Node = () => {
-//   const isDarkMode = useColorScheme() === 'dark';
-
-//   const backgroundStyle = {
-//     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-//   };
-
-//   return (
-//     <SafeAreaView style={backgroundStyle}>
-//       <StatusBar
-//         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-//         backgroundColor={backgroundStyle.backgroundColor}
-//       />
-//       <ScrollView
-//         contentInsetAdjustmentBehavior="automatic"
-//         style={backgroundStyle}>
-//         <Header />
-//         <View
-//           style={{
-//             backgroundColor: isDarkMode ? Colors.black : Colors.white,
-//           }}>
-//           <Section title="Step One">
-//             Edit <Text style={styles.highlight}>App.js</Text> to change this
-//             screen and then come back to see your edits.
-//           </Section>
-//           <Section title="See Your Changes">
-//             <ReloadInstructions />
-//           </Section>
-//           <Section title="Debug">
-//             <DebugInstructions />
-//           </Section>
-//           <Section title="Learn More">
-//             Read the docs to discover what to do next:
-//           </Section>
-//           <LearnMoreLinks />
-//         </View>
-//       </ScrollView>
-//     </SafeAreaView>
-//   );
-// };
-
-// const styles = StyleSheet.create({
-//   sectionContainer: {
-//     marginTop: 32,
-//     paddingHorizontal: 24,
+// Must be outside of any component LifeCycle (such as `componentDidMount`).
+// PushNotification.configure({
+//   // (optional) Called when Token is generated (iOS and Android)
+//   onRegister: function (token) {
+//     console.log('TOKEN:', token);
 //   },
-//   sectionTitle: {
-//     fontSize: 24,
-//     fontWeight: '600',
+
+//   // (required) Called when a remote is received or opened, or local notification is opened
+//   onNotification: function (notification) {
+//     console.log('NOTIFICATION:', notification);
+
+//     PushNotification.localNotification({
+//       channelId: 'new-movie',
+//       title: notification.title,
+//       message: notification.message,
+//       bigPictureUrl: notification.bigPictureUrl,
+//       largeIcon: notification.largeIcon,
+//     });
+//     // process the notification
+
+//     // (required) Called when a remote is received or opened, or local notification is opened
+//     // notification.finish(PushNotificationIOS.FetchResult.NoData);
 //   },
-//   sectionDescription: {
-//     marginTop: 8,
-//     fontSize: 18,
-//     fontWeight: '400',
+
+//   // (optional) Called when Registered Action is pressed and invokeApp is false, if true onNotification will be called (Android)
+//   onAction: function (notification) {
+//     console.log('ACTION:', notification.action);
+//     console.log('NOTIFICATION:', notification);
+
+//     // process the action
 //   },
-//   highlight: {
-//     fontWeight: '700',
+
+//   // (optional) Called when the user fails to register for remote notifications. Typically occurs when APNS is having issues, or the device is a simulator. (iOS)
+//   onRegistrationError: function (err) {
+//     console.error(err.message, err);
 //   },
+
+//   // IOS ONLY (optional): default: all - Permissions to register.
+//   permissions: {
+//     alert: true,
+//     badge: true,
+//     sound: true,
+//   },
+
+//   // Should the initial notification be popped automatically
+//   // default: true
+//   popInitialNotification: true,
+
+//   /**
+//    * (optional) default: true
+//    * - Specified if permissions (ios) and token (android and ios) will requested or not,
+//    * - if not, you must call PushNotificationsHandler.requestPermissions() later
+//    * - if you are not using remote notification or do not have Firebase installed, use this:
+//    *     requestPermissions: Platform.OS === 'ios'
+//    */
+//   requestPermissions: true,
 // });
 
-// export default App;
+// PushNotification.subscribeToTopic('new-movie');
+
+function App() {
+  return (
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <MainstackNavigtor />
+      </PersistGate>
+    </Provider>
+  );
+}
+
+export default App;
