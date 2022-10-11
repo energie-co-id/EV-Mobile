@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 import {useDispatch} from 'react-redux';
 import {getBookingByUserId} from '../../store/action/booking';
-import {LINK_CLOUDINARY} from '@env';
+// import {REACT_APP_LINK_CLOUDINARY} from '@env';
 import {
   getUser,
   updateProfile,
@@ -390,7 +390,7 @@ function Profile(props) {
                       ) : (
                         <Image
                           source={{
-                            uri: `${LINK_CLOUDINARY}${data.image}`,
+                            uri: `https://res.cloudinary.com/fazztrack/image/upload/v1655102148/${data.image}`,
                           }}
                           style={profile.avatar}
                         />
