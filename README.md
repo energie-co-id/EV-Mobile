@@ -95,6 +95,7 @@ https://github.com/foldadjo/Ticketing_BE.git
 - [eslint](https://www.npmjs.com/package/eslint)
 - [local-notification](https://www.npmjs.com/package/react-native-local-push-notification)
 - [remote-notification](https://console.firebase.google.com/)
+- [tailwind](https://tailwindcss.com/docs)
 
 <br>          |
 
