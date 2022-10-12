@@ -1,18 +1,22 @@
 import React from 'react';
-// import { withExpoSnack } from 'nativewind';
-
-// import {REACT_APP_LINK_CLOUDINARY} from '@react-native-dotenv';
-
 import { View, Text, TouchableOpacity } from 'react-native';
+import tw from 'twrnc';
+import Icon from "react-native-vector-icons/MaterialIcons";
+import Home from '../screen/Home';
 
 function MyTabBar({ state, descriptors, navigation }) {
   // console.log(state)
   // console.log(descriptors)
   // console.log(navigation)
   return (
-    <View style={{ flexDirection: 'row' }}>
+    <View style={[tw`bg-gray-400 h-20 flex-row items-center`]}>
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
+
+        console.log(options.tabBarIcon)
+
+        const isFocused = state.index === index;
+
         const label =
           options.tabBarLabel !== undefined
             ? options.tabBarLabel
@@ -20,7 +24,14 @@ function MyTabBar({ state, descriptors, navigation }) {
             ? options.title
             : route.name;
 
-        const isFocused = state.index === index;
+        const Icons =
+          options.tabBarLabel === 'Home'
+            ? <Icon style={{textAlign:'center'}} name='home' size={isFocused ? 30 : 25} color={isFocused ? '#673ab7' : '#222'} />
+            : options.tabBarLabel === 'Find Station'
+            ? <Icon name='ev-station' size={isFocused ? 30 : 25} color={isFocused ? '#673ab7' : '#222'} />
+            : options.tabBarLabel === 'History'
+            ? <Icon name='history-edu' size={isFocused ? 30 : 25} color={isFocused ? '#673ab7' : '#222'} />
+            :<Icon name='person' size={isFocused ? 30 : 25} color={isFocused ? '#673ab7' : '#222'} />
 
         const onPress = () => {
           const event = navigation.emit({
@@ -53,7 +64,10 @@ function MyTabBar({ state, descriptors, navigation }) {
             onLongPress={onLongPress}
             style={{ flex: 1 }}
           >
-            <Text style={{ color: isFocused ? '#673ab7' : '#222' }}>
+            <View style={[tw`bg-black text-center`]}>
+              {Icons}
+            </View>
+            <Text style={[{ color: isFocused ? '#673ab7' : '#222' }, tw`text-center text-lg`]}>
               {label}
             </Text>
           </TouchableOpacity>
