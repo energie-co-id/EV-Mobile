@@ -7,7 +7,7 @@ function Footer(props) {
     props.navigation.navigate('Home');
   };
   const handleViewAll = () => {
-    props.navigation.navigate('ViewAllNavigator');
+    props.navigation.navigate('Profile')
   };
   return (
     <View style={footer.container}>
