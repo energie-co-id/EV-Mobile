@@ -1,5 +1,4 @@
 import React from 'react';
-// import { withExpoSnack } from 'nativewind';
 import Footer from '../../component/footer';
 // import {useDispatch} from 'react-redux';
 // import {getAllMovie} from '../../store/action/movie';
@@ -18,22 +17,19 @@ import {
   // FlatList,
 } from 'react-native';
 
-import { styled } from "nativewind";
-
-const StyledView = styled(View);
-const StyledText = styled(Text);
-const StyledTouch = styled(TouchableOpacity);
+import tw from 'tailwind-react-native-classnames'
 
 
 function History(props) {
 
   return (
-    <ScrollView showsVerticalScrollIndicator={false}>
-      <StyledTouch className='bg-slate-200 rounded-2xl h-60 m-5 active:bg-slate-100'>
-        <StyledText className='text-black dark:text-white text-8xl text-center m-5'>
+    <ScrollView>
+      <TouchableOpacity style={[tw`rounded-2xl h-60 m-5`]}>
+        <Text style={[tw `text-black text-lg text-center m-5`]}>
           History
-        </StyledText>
-      </StyledTouch>
+        </Text>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Text>Profile</Text></TouchableOpacity>
+      </TouchableOpacity>
       <Footer/>
     </ScrollView>
   );
