@@ -1,7 +1,7 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import FontAwesome from "react-native-vector-icons/MaterialIcons";
+import Icon from "react-native-vector-icons/MaterialIcons";
 
 const Stack = createNativeStackNavigator();
 
@@ -61,7 +61,7 @@ function AppNavigator() {
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({color, focused}) => (
-            <FontAwesome name='home' size={focused ? 30 : 25} color={color} />
+            <Icon name='home' size={focused ? 30 : 25} color={color} />
           )
         }}
       />
@@ -71,7 +71,7 @@ function AppNavigator() {
         options={{
           tabBarLabel: 'Find Station',
           tabBarIcon: ({color, focused}) => (
-            <FontAwesome name='ev-station' size={focused ? 30 : 25} color={color} />
+            <Icon name='ev-station' size={focused ? 30 : 25} color={color} />
           )
         }}
       />
@@ -81,7 +81,7 @@ function AppNavigator() {
         options={{
           tabBarLabel: 'History',
           tabBarIcon: ({color, focused}) => (
-            <FontAwesome name='history-edu' size={focused ? 30 : 25} color={color} />
+            <Icon name='history-edu' size={focused ? 30 : 25} color={color} />
           )
         }}
       />

@@ -17,8 +17,7 @@ import {
   // FlatList,
 } from 'react-native';
 
-import tw from 'tailwind-react-native-classnames'
-
+import tw from 'twrnc';
 
 function Profile(props) {
 
