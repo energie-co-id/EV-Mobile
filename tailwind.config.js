@@ -1,3 +1,5 @@
+// const { plugin } = require('twrnc');
+const plugin = require('tailwindcss/plugin');
 const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
@@ -241,5 +243,19 @@ module.exports = {
       })
     }
   },
-  plugins: []
+  plugins: [
+    plugin(({ addUtilities }) => {
+      addUtilities({
+        btn: {
+          padding: 3,
+          borderRadius: 10,
+          textTransform: `uppercase`,
+          backgroundColor: `#333`,
+        },
+        'resize-repeat': {
+          resizeMode: `repeat`,
+        },
+      });
+    }),
+  ]
 };

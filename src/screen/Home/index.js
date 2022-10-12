@@ -17,19 +17,18 @@ import {
   // FlatList,
 } from 'react-native';
 
-import tw from 'tailwind-react-native-classnames'
-
+import tw from 'twrnc';
 
 function Home(props) {
 
   return (
     <ScrollView>
-      <TouchableOpacity style={[tw`rounded-2xl h-60 m-5`]}>
+      <TouchableOpacity style={[tw`rounded-2xl bg-gray-300 h-60 m-5`]}>
         <Text style={[tw `text-black text-lg text-center m-5`]}>
           Home
         </Text>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Text>Profile</Text></TouchableOpacity>
       </TouchableOpacity>
+      <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Text>Profile</Text></TouchableOpacity>
       <Footer/>
     </ScrollView>
   );
