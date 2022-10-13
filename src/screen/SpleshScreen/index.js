@@ -29,14 +29,14 @@ function SpleshSreen(props) {
       <ImageBackground source={image} resizeMode="cover" style={ss.bg}>
         <View style={ss.row}>
           <View>
-            <Text style={ss.title}>Ticketing</Text>
+            <Text style={ss.title}>Logo</Text>
           </View>
           <View>
             <Image source={require('../../assets/logo.png')} style={ss.image} />
           </View>
         </View>
         <View>
-          <Text style={ss.tag}>wait, watch, wow!</Text>
+          <Text style={ss.tag}>Welcome ^_^</Text>
         </View>
       </ImageBackground>
     </View>

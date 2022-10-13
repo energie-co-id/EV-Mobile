@@ -5,7 +5,8 @@ import Login from '../screen/Login';
 import Register from '../screen/Register';
 import ResetPassword from '../screen/ResetPassword';
 import ForgotPassword from '../screen/ForgotPassword';
-
+import OnBoard from'../screen/OnBoard';
+import onBoard from '../screen/OnBoard';
 function AuthNavigator() {
   return (
     <Stack.Navigator>
@@ -28,7 +29,7 @@ function AuthNavigator() {
         component={ForgotPassword}
         name="ForgotPassword"
         options={{headerShown: false}}
-      />
+      />  
     </Stack.Navigator>
   );
 }

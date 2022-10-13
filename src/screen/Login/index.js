@@ -78,7 +78,7 @@ function Login(props) {
      Selamat Datang di Hyundai EV Charger Mobile.
      </Text>
    </View>
-   <View style>
+   <View>
      <View>
        <Image
          source={require('../../assets/logo.png')}
@@ -110,21 +110,21 @@ function Login(props) {
     <View style={[tw`mt-1`]}> 
     {/* <Text>Forgot your password? </Text>  */}
      <TouchableOpacity onPress={handlePassword}>
-       <Text style={[tw`text-gray-400 text-center font-mono`]}> {'  '}Forgot Password</Text>
+       <Text style={[tw`text-gray-700 text-center font-mono`]}> {'  '}Forgot Password</Text>
      </TouchableOpacity> 
    </View>
    </View>
-   <View style={[tw`border-2 border-gray-500 rounded-lg bg-white font-mono font-semibold mt-3`]}>
+   <View style={[tw`border-gray-500 rounded-xl bg-gray-500 p-1 font-mono font-semibold mt-3`]}>
      {loading === true ? (
        <ActivityIndicator size="large" color="white" />
      ) : (
-       <Button title="Login" color={'#676767'} onPress={handleLogin} />
+       <Button title="Login" color={'#6B7280'} onPress={handleLogin} />
      )}
    </View>
    <View style={[tw`justify-center flex-row`]}>
-     <Text style={[tw`font-mono`]}>Don’t have an account?</Text>
+     <Text style={[tw`font-mono text-gray-500`]}>Don’t have an account?</Text>
      <TouchableOpacity onPress={handleRegister}>
-       <Text style={[tw`text-gray-400 font-mono`]}> {'  '}Sign Up</Text>
+       <Text style={[tw`text-gray-700 font-mono`]}> {'  '}Sign Up</Text>
      </TouchableOpacity>
    </View>
  </ScrollView>
