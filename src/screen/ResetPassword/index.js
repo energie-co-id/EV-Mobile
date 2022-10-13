@@ -12,6 +12,8 @@ import {
   ActivityIndicator,
 } from 'react-native';
 
+import tw from 'twrnc';
+
 function ResetPassword(props) {
   const [mail, setMail] = useState('');
   const [loading, setLoading] = useState(false);
@@ -48,40 +50,28 @@ function ResetPassword(props) {
     }
   };
   return (
-    <ScrollView style={reset.container} showsVerticalScrollIndicator={false}>
-      <View style={reset.row}>
-        <View>
-          <Text style={reset.logo}>Ticketing</Text>
-        </View>
-        <View>
-          <Image
-            source={require('../../assets/logo.png')}
-            style={reset.image}
-          />
-        </View>
-      </View>
+    <ScrollView style={[tw`m-8.8`]} showsVerticalScrollIndicator={false}>
       <View>
-        <Text style={reset.title}> Forgot Password</Text>
-        <Text style={reset.tag}>we'll send a link to your email shortly</Text>
+        <Text style={[tw`text-black text-left text-4xl font-mono font-bold mt-7`]}> Forgot Password</Text>
+        <Text style={[tw`text-gray-400 text-left text-base font-mono mt-1`]}>We'll send a link to your email shortly</Text>
       </View>
       <View style={reset.formulir}>
         <View>
-          <Text style={reset.name}> Email </Text>
           <TextInput
-            placeholder="Write your email"
+            placeholder="Write your Email Address"
             autoComplete="email"
             keyboardType="email-address"
-            style={reset.form}
+            style={[tw`border-2 border-gray-100 bg-white text-gray-700 font-mono font-bold mt-1 pl-5`]}
             onChangeText={newText => setMail(newText)}
             defaultValue={mail}
           />
         </View>
       </View>
-      <View style={reset.button}>
+      <View style={[tw`border-2 border-gray-500 rounded-lg bg-white font-mono font-semibold mt-3`]}>
         {loading === true ? (
           <ActivityIndicator size="large" color="white" />
         ) : (
-          <Button title="Send" color={'#5F2EEA'} onPress={handlePassword} />
+          <Button title="Send" color={'#676767'} onPress={handlePassword} />
         )}
       </View>
     </ScrollView>

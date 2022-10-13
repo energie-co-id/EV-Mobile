@@ -6,7 +6,6 @@ import {useDispatch, useSelector} from 'react-redux';
 import {
   View,
   Text,
-  StyleSheet,
   TouchableOpacity,
   Button,
   ScrollView,
@@ -14,6 +13,8 @@ import {
   Image,
   ActivityIndicator,
 } from 'react-native';
+
+import tw from 'twrnc';
 
 function Login(props) {
   const [mail, setMail] = useState('');
@@ -70,119 +71,64 @@ function Login(props) {
     props.navigation.navigate('ResetPassword');
   };
   return (
-    <ScrollView style={login.container} showsVerticalScrollIndicator={false}>
-      <View style={login.row}>
-        <View>
-          <Text style={login.logo}>Ticketing</Text>
-        </View>
-        <View>
-          <Image
-            source={require('../../assets/logo.png')}
-            style={login.image}
-          />
-        </View>
-      </View>
-      <View>
-        <Text style={login.title}> Sign In</Text>
-        <Text style={login.tag}>
-          Sign in with your data that you entered during your registration.
-        </Text>
-      </View>
-      <View style={login.formulir}>
-        <View>
-          <Text style={login.name}> Email </Text>
-          <TextInput
-            placeholder="Write your email"
-            autoComplete="email"
-            keyboardType="email-address"
-            style={login.form}
-            onChangeText={newText => setMail(newText)}
-            defaultValue={mail}
-          />
-        </View>
-        <View>
-          <Text style={login.name}> Password </Text>
-          <TextInput
-            placeholder="Write your password"
-            autoComplete="password"
-            secureTextEntry={true}
-            style={login.form}
-            onChangeText={newText => setPassword(newText)}
-            defaultValue={password}
-          />
-        </View>
-      </View>
-      <View style={login.button}>
-        {loading === true ? (
-          <ActivityIndicator size="large" color="white" />
-        ) : (
-          <Button title="Login" color={'#5F2EEA'} onPress={handleLogin} />
-        )}
-      </View>
-      <View style={login.login}>
-        <Text>Forgot your password? </Text>
-        <TouchableOpacity onPress={handlePassword}>
-          <Text style={login.in}> {'  '}Reset now</Text>
-        </TouchableOpacity>
-      </View>
-      <View style={login.login}>
-        <Text>Don’t have an account?</Text>
-        <TouchableOpacity onPress={handleRegister}>
-          <Text style={login.in}> {'  '}Sign Up</Text>
-        </TouchableOpacity>
-      </View>
-    </ScrollView>
-  );
+    <ScrollView style={[tw`m-8.8`]} showsVerticalScrollIndicator={false}>
+    <View>
+     <Text style={[tw`text-black text-center text-4xl font-mono font-bold mt-10`]}>Hai, Electrizen!</Text>
+     <Text style={[tw`text-gray-400 text-center text-base font-mono mt-1`]}>
+     Selamat Datang di Hyundai EV Charger Mobile.
+     </Text>
+   </View>
+   <View style>
+     <View>
+       <Image
+         source={require('../../assets/logo.png')}
+         style={[tw`w-full h-70 justify-center items-center`]}
+       />
+     </View>
+   </View>
+   <View>
+     <View>
+       <TextInput
+         placeholder="Email Address"
+         autoComplete="email"
+         keyboardType="email-address"
+         style={[tw`border-2 border-gray-100 bg-white text-gray-700 font-mono font-bold mt-1 pl-5`]}
+         onChangeText={newText => setMail(newText)}
+         defaultValue={mail}
+       />
+     </View>
+     <View>
+       <TextInput
+         placeholder="Password"
+         autoComplete="password"
+         secureTextEntry={true}
+         style={[tw`border-2 border-gray-100 bg-white text-gray-700 font-mono font-bold mt-2 pl-5`]}
+         onChangeText={newText => setPassword(newText)}
+         defaultValue={password}
+       />
+     </View>
+    <View style={[tw`mt-1`]}> 
+    {/* <Text>Forgot your password? </Text>  */}
+     <TouchableOpacity onPress={handlePassword}>
+       <Text style={[tw`text-gray-400 text-center font-mono`]}> {'  '}Forgot Password</Text>
+     </TouchableOpacity> 
+   </View>
+   </View>
+   <View style={[tw`border-2 border-gray-500 rounded-lg bg-white font-mono font-semibold mt-3`]}>
+     {loading === true ? (
+       <ActivityIndicator size="large" color="white" />
+     ) : (
+       <Button title="Login" color={'#676767'} onPress={handleLogin} />
+     )}
+   </View>
+   <View style={[tw`justify-center flex-row`]}>
+     <Text style={[tw`font-mono`]}>Don’t have an account?</Text>
+     <TouchableOpacity onPress={handleRegister}>
+       <Text style={[tw`text-gray-400 font-mono`]}> {'  '}Sign Up</Text>
+     </TouchableOpacity>
+   </View>
+ </ScrollView>
+);
 }
-
-const login = StyleSheet.create({
-  container: {
-    margin: 25,
-  },
-  row: {
-    flexDirection: 'row',
-    marginBottom: 30,
-    marginTop: 30,
-  },
-  logo: {
-    fontSize: 35,
-    color: '#5F2EEA',
-    fontWeight: '600',
-    padding: 5,
-  },
-  title: {
-    fontSize: 30,
-    color: 'black',
-    fontWeight: '500',
-  },
-  image: {width: 50, height: 50, top: 6, padding: 5},
-  tag: {fontSize: 15, color: '#8692A6', fontWeight: '300', marginTop: 5},
-  formulir: {marginTop: 20},
-  name: {fontSize: 15, marginTop: 25},
-  form: {
-    backgroundColor: '#FFFFFF',
-    borderColor: '#8692A6',
-    borderRadius: 8,
-    borderWidth: 1,
-    padding: 15,
-    marginTop: 10,
-  },
-  button: {
-    backgroundColor: '#5F2EEA',
-    color: 'white',
-    borderRadius: 10,
-    marginTop: 40,
-    marginBottom: 15,
-    padding: 5,
-  },
-  login: {
-    justifyContent: 'center',
-    flexDirection: 'row',
-    marginTop: 15,
-  },
-  in: {
-    color: '#5F2EEA',
-  },
-});
 
 export default Login;
