@@ -25,8 +25,10 @@ function Main (props) {
       </View>
       </View>
      
-      <Text style={[tw`text-gray-500 text-2xl font-bold mt-1 ml-7 mb-1`]}>Konsumsi Energi Tahun ini</Text>
-     <TouchableOpacity style={[tw`bg-gray-200 h-75 w-79 mt-2 ml-5`]}></TouchableOpacity>
+      <Text style={[tw`text-gray-500 text-2xl font-bold mt-1 ml-7`]}>Konsumsi Energi Tahun ini</Text>
+      <Text style={[tw`text-gray-500 text-xl mt-1 ml-7 mb-15`]}>Konsumsi Energi Tahun ini</Text>
+      <Text style={[tw`text-gray-500 text-lg mt-1 ml-7`]}>Konsumsi Energi Tahun ini</Text>
+     <TouchableOpacity style={[tw`bg-gray-200 h-51 w-79 mt-2 ml-5`]}></TouchableOpacity>
     </View>
   );
 }
