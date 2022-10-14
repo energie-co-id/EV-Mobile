@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../../component/footer';
+import Main from '../../component/main';
 // import {useDispatch} from 'react-redux';
 // import {getAllMovie} from '../../store/action/movie';
 // import {REACT_APP_LINK_CLOUDINARY} from '@env';
@@ -11,7 +11,8 @@ import {
   // Button,
   ScrollView,
   // TextInput,
-  // Image,
+  Image,
+  ImageBackground,
   // RefreshControl,
   // ActivityIndicator,
   // FlatList,
@@ -23,13 +24,15 @@ function Home(props) {
 
   return (
     <ScrollView>
-      <TouchableOpacity style={[tw`rounded-2xl bg-gray-300 h-60 m-5`]}>
-        <Text style={[tw `text-black text-lg text-center m-5`]}>
-          Home
-        </Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Text>Profile</Text></TouchableOpacity>
-      <Footer/>
+     <View style={[tw`flex flex-row`]}>
+     <TouchableOpacity style={[tw`rounded-2xl bg-gray-300 h-20 w-50 mt-5 ml-5`]}></TouchableOpacity>
+     <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image source={require('../../assets/logo.png')}
+         style={[tw`w-20 h-20 ml-9 mt-5`]}/></TouchableOpacity>
+     </View>
+      <Text style={[tw `text-gray-500 text-2xl ml-7 mt-1.1 font-mono font-bold`]}> EV Charging Hyundai </Text>
+      <Text style={[tw `text-gray-500 text-md ml-7 mb-11`]}> New Thinking, New Posibilities </Text>
+      <Main/>
+      
     </ScrollView>
   );
 }
