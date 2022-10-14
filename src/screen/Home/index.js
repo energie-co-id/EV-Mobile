@@ -23,7 +23,7 @@ import tw from 'twrnc';
 function Home(props) {
 
   return (
-    <ScrollView>
+    <ScrollView showsVerticalScrollIndicator={false}>
      <View style={[tw`flex flex-row`]}>
      <TouchableOpacity style={[tw`rounded-2xl bg-gray-300 h-20 w-50 mt-5 ml-5`]}></TouchableOpacity>
      <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image source={require('../../assets/logo.png')}
