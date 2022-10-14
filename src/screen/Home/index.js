@@ -30,7 +30,7 @@ function Home(props) {
          style={[tw`w-20 h-20 ml-9 mt-5`]}/></TouchableOpacity>
      </View>
       <Text style={[tw `text-gray-500 text-2xl ml-7 mt-1.1 font-mono font-bold`]}> EV Charging Hyundai </Text>
-      <Text style={[tw `text-gray-500 text-lg ml-7 mb-5`]}> New Thinking, New Posibilities </Text>
+      <Text style={[tw `text-gray-500 text-md ml-7 mb-5`]}> New Thinking, New Posibilities </Text>
       <Main/>
       
     </ScrollView>
