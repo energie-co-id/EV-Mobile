@@ -106,8 +106,8 @@ function Register(props) {
           />
         </View>
         <View>
-        <Text style={[tw`text-gray-700 text-justify font-mono mt-2 mb-1`]}> By registering, you confirm that you accept</Text>
-        <Text style={[tw`text-gray-700 text-justify font-mono mt-0.1`]}> our Terms of Use and Privacy Policy </Text>
+        <Text style={[tw`text-gray-700 text-justify font-mono mt-2 mb-1`]}> By registering, you confirm that you accept our</Text>
+        <Text style={[tw`text-gray-700 text-justify font-mono mt-0.1`]}>Terms of Use and Privacy Policy </Text>
         </View>
       </View>
       <View style={[tw`border-gray-500 rounded-xl bg-gray-500 p-1 font-mono font-semibold mt-3`]}>
