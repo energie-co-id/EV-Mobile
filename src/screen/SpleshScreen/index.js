@@ -30,14 +30,14 @@ function SpleshSreen(props) {
       <ImageBackground source={image} resizeMode="cover" style={[tw`flex-1 justify-center items-center`]}>
         <View style={[tw`flex-row`]}>
           <View>
-            <Text style={[tw`text-black text-5xl mt-25 ml-3 font-mono`]}> Logo </Text>
+            <Text style={[tw`text-black text-5xl mt-11 font-mono`]}> App Logo </Text>
           </View>
           <View>
-            <Image source={require('../../assets/logo.png')} style={tw`w-20 h-20 p-5 mt-19`}/>
+            <Image source={require('../../assets/logo.png')} style={tw`w-20 h-20 p-5 mt-5`}/>
           </View>
         </View>
         <View>
-          <Text style={[tw`text-black text-3xl m-11 font-mono`]}> Welcome ^_^ </Text>
+          <Text style={[tw`text-black text-3xl mt-7 font-mono`]}> Welcome ^_^ </Text>
         </View>
       </ImageBackground>
     </View>
