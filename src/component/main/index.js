@@ -11,8 +11,11 @@ function Main (props) {
     props.navigation.navigate('Profile')
   };
   return (
-    <View>
-      </View>
+    <View style={[tw`h-3/4 bg-white`]}>
+     <Text style={[tw`border-2 border-gray-500 bg-white`]}>
+       
+     </Text>
+    </View>
       
   );
 }
