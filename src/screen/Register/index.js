@@ -66,7 +66,7 @@ function Register(props) {
   return (
     <ScrollView style={[tw`m-8.8`]} showsVerticalScrollIndicator={false}>
         <View>
-        <Text style={[tw`text-black text-center text-4xl font-mono font-bold mt-5`]}>Buat Akun Baru</Text>
+        <Text style={[tw`text-gray-700 text-center text-4xl font-mono font-bold mt-5 mb-3`]}>Buat Akun Baru</Text>
         </View>
         <View>
           <Image
@@ -90,7 +90,7 @@ function Register(props) {
             placeholder="Write your password"
             autoComplete="password"
             secureTextEntry={true}
-            style={[tw`border-2 border-gray-100 bg-white text-gray-700 font-mono font-bold mt-2 pl-5`]}
+            style={[tw`border-2 border-gray-100 bg-white text-gray-700 font-mono font-bold mt-1.5 pl-5`]}
             onChangeText={newText => setPassword(newText)}
             defaultValue={password}
           />
@@ -106,7 +106,8 @@ function Register(props) {
           />
         </View>
         <View>
-        <Text style={[tw`text-gray-700 text-justify font-mono mt-2 mb-1 `]}> By registering, you confirm that you accept our Terms of Use and Privacy Policy </Text>
+        <Text style={[tw`text-gray-700 text-justify font-mono mt-2 mb-1`]}> By registering, you confirm that you accept</Text>
+        <Text style={[tw`text-gray-700 text-justify font-mono mt-0.1`]}> our Terms of Use and Privacy Policy </Text>
         </View>
       </View>
       <View style={[tw`border-gray-500 rounded-xl bg-gray-500 p-1 font-mono font-semibold mt-3`]}>
