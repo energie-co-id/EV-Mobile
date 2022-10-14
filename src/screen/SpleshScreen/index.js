@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
-import {View, Text, Image, StyleSheet, ImageBackground} from 'react-native';
+import {View, Text, Image, ImageBackground} from 'react-native';
+import tw from 'twrnc';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 const image = require('../../assets/ss.jpg');
 // const jwt_decode = require('jwt-decode');
@@ -25,44 +26,22 @@ function SpleshSreen(props) {
     }, 3000);
   };
   return (
-    <View style={ss.container}>
-      <ImageBackground source={image} resizeMode="cover" style={ss.bg}>
-        <View style={ss.row}>
+    <View style={[tw`flex-1`]}>
+      <ImageBackground source={image} resizeMode="cover" style={[tw`flex-1 justify-center items-center`]}>
+        <View style={[tw`flex-row`]}>
           <View>
-            <Text style={ss.title}>Logo</Text>
+            <Text style={[tw`text-black text-4xl mt-25 ml-3 font-mono`]}> Logo </Text>
           </View>
           <View>
-            <Image source={require('../../assets/logo.png')} style={ss.image} />
+            <Image source={require('../../assets/logo.png')} style={tw`w-20 h-20 p-5 mt-17`}/>
           </View>
         </View>
         <View>
-          <Text style={ss.tag}>Welcome ^_^</Text>
+          <Text style={[tw`text-black text-2xl m-15 font-mono`]}> Welcome ^_^ </Text>
         </View>
       </ImageBackground>
     </View>
   );
 }
-
-const ss = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  row: {
-    flexDirection: 'row',
-  },
-  bg: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  title: {
-    fontSize: 35,
-    color: 'white',
-    fontWeight: '600',
-    padding: 5,
-  },
-  image: {width: 50, height: 50, top: 6, padding: 5},
-  tag: {fontSize: 20, color: 'white', fontWeight: '300', margin: 15},
-});
 
 export default SpleshSreen;
