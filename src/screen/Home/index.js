@@ -33,19 +33,19 @@ function Home(props) {
 
     <View style={[tw`h-170 bg-white`]}>
       <View style={[tw`border-2 border-gray-200 rounded-xl bg-white mt-5 mr-5 ml-5 mb-2`]}>
-        <Text style={[tw`text-gray-500 text-2xl font-bold mt-2 ml-5`]}>Konsumsi Energi Anda</Text>
+        <Text style={[tw`text-gray-500 text-2xl font-bold mt-5 ml-5`]}>Konsumsi Energi Anda</Text>
         <View style={[tw`flex flex-row`]}>
         <View style={[tw`bg-white mt-5 mb-2 w-1/3`]}>
-        <Text style={[tw`text-gray-500 text-2xl font-bold mt-5 ml-5`]}>Hari Ini</Text>
-        <Text style={[tw`text-gray-500 text-xl font-bold`]}>      5.4 KwH </Text> 
+        <Text style={[tw`text-gray-500 text-2xl font-bold mt-5 ml-3`]}>◉ Hari Ini</Text>
+        <Text style={[tw`text-gray-500 text-xl font-normal`]}><Text style={[tw`text-gray-500 text-xl font-bold`]}>        5.4</Text> KwH </Text>
         </View>
         <View style={[tw`bg-white mt-5 mb-2 w-1/3`]}>
-        <Text style={[tw`text-gray-500 text-2xl font-bold mt-5 ml-2.1`]}>Bulan Ini</Text>
-        <Text style={[tw`text-gray-500 text-xl font-bold`]}>    40.7 KwH</Text>
+        <Text style={[tw`text-gray-500 text-2xl font-bold mt-5`]}>◉ Bulan Ini</Text>
+        <Text style={[tw`text-gray-500 text-xl font-normal`]}><Text style={[tw`text-gray-500 text-xl font-bold`]}>     40.7</Text> KwH </Text>
         </View>
-        <View style={[tw`border-l-2 border-gray-300 bg-white mt-5 mb-2 ml-0.11 w-1/3`]}>
-        <TouchableOpacity><Image style={[tw`h-20 w-20 ml-3 mb-1 justify-center items-center`]} source={require('../../assets/charge.png')}/></TouchableOpacity> 
-        <Text style={[tw`text-gray-500 text-2xl font-bold mt-1 ml-4.7 mb-3`]}>Charge</Text>
+        <View style={[tw`border-l-2 border-gray-300 bg-white mt-5 mb-2 ml-0.31 w-1/3`]}>
+        <TouchableOpacity><Image style={[tw`h-17 w-17 ml-5 mb-1 justify-center items-center`]} source={require('../../assets/charge.png')}/></TouchableOpacity> 
+        <Text style={[tw`text-gray-500 text-xl font-semibold mt-1 ml-7 mb-3`]}>Charge</Text>
         </View>
         </View>
       {/* <View style={[tw`flex flex-row`]}> */}
@@ -57,9 +57,9 @@ function Home(props) {
       {/* </View> */}
       </View>
       <Text style={[tw`text-gray-500 text-2xl font-bold mt-1 ml-7`]}>Konsumsi Energi Tahun ini</Text>
-      <Text style={[tw`text-gray-500 text-lg mt-1 ml-7 mb-15`]}>Hemat pengeluaran Anda dengan monitor konsumsi energi tiap kali </Text>
-      <Text style={[tw`text-gray-500 text-lg mt-1 ml-7`]}>Anda Charging</Text>
-     <TouchableOpacity style={[tw`bg-gray-200 h-59 w-79 mt-2 ml-5`]}></TouchableOpacity>
+      <Text style={[tw`text-gray-500 text-lg text-justify mt-1  mr-5 ml-7 mb-3`]}>Hemat pengeluaran Anda dengan monitor konsumsi energi tiap kali.</Text>
+      <Text style={[tw`text-gray-500 text-lg mt-5 ml-7`]}>Anda Charging</Text>
+     <TouchableOpacity style={[tw`bg-gray-200 h-57 w-79 mt-2 ml-5`]}></TouchableOpacity>
     </View>
     </ScrollView>
     
