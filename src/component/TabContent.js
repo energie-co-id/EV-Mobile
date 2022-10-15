@@ -30,8 +30,8 @@ function MyTabBar({ state, descriptors, navigation }) {
             : options.tabBarLabel === 'Find Station'
             ? <Icon style={{textAlign:'center'}} name='ev-station' size={isFocused ? 30 : 25} color={isFocused ? '#ffff' : '#fafafa'} />
             : options.tabBarLabel === 'History'
-            ? <Icon style={{textAlign:'center'}} name='history-edu' size={isFocused ? 30 : 25} color={isFocused ? '#ffff' : 'fafafa'} />
-            :<Icon style={{textAlign:'center'}} name='person' size={isFocused ? 30 : 25} color={isFocused ? '#ffff' : '#fafafa'} />
+            ? <Icon style={{textAlign:'center'}} name='history-edu' size={isFocused ? 30 : 25} color={isFocused ? '#ffff' : '#ffff'} />
+            :<Icon style={{textAlign:'center'}} name='person' size={isFocused ? 30 : 25} color={isFocused ? '#ffff' : '#ffff'} />
 
         const onPress = () => {
           const event = navigation.emit({
