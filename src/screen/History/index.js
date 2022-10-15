@@ -1,5 +1,4 @@
 import React from 'react';
-import Main from '../../component/main';
 // import {useDispatch} from 'react-redux';
 // import {getAllMovie} from '../../store/action/movie';
 // import {REACT_APP_LINK_CLOUDINARY} from '@env';
@@ -29,7 +28,6 @@ function History(props) {
         </Text>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Text>Profile</Text></TouchableOpacity>
       </TouchableOpacity>
-      <Main/>
     </ScrollView>
   );
 }

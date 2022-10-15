@@ -1,5 +1,5 @@
 import React from 'react';
-import Main from '../../component/main';
+
 // import {useDispatch} from 'react-redux';
 // import {getAllMovie} from '../../store/action/movie';
 // import {REACT_APP_LINK_CLOUDINARY} from '@env';
@@ -29,7 +29,6 @@ function Profile(props) {
         </Text>
         <TouchableOpacity onPress={() => props.navigation.navigate("AppScreen", {screen: 'Home'})}><Text>Home</Text></TouchableOpacity>
       </TouchableOpacity>
-      <Main/>
     </ScrollView>
   );
 }

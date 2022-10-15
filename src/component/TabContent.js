@@ -9,7 +9,7 @@ function MyTabBar({ state, descriptors, navigation }) {
   // console.log(descriptors)
   // console.log(navigation)
   return (
-    <View style={[tw`bg-gray-400 h-20 flex-row items-center`]}>
+    <View style={[tw`rounded-sm bg-gray-400 h-18.7 flex-row items-center`]}>
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
 
@@ -26,12 +26,12 @@ function MyTabBar({ state, descriptors, navigation }) {
 
         const Icons =
           options.tabBarLabel === 'Home'
-            ? <Icon style={{textAlign:'center'}} name='home' size={isFocused ? 30 : 25} color={isFocused ? '#673ab7' : '#222'} />
+            ? <Icon style={{textAlign:'center'}} name='home' size={isFocused ? 30 : 25} color={isFocused ? '#ffff' : '#fafafa'} />
             : options.tabBarLabel === 'Find Station'
-            ? <Icon name='ev-station' size={isFocused ? 30 : 25} color={isFocused ? '#673ab7' : '#222'} />
+            ? <Icon style={{textAlign:'center'}} name='ev-station' size={isFocused ? 30 : 25} color={isFocused ? '#ffff' : '#fafafa'} />
             : options.tabBarLabel === 'History'
-            ? <Icon name='history-edu' size={isFocused ? 30 : 25} color={isFocused ? '#673ab7' : '#222'} />
-            :<Icon name='person' size={isFocused ? 30 : 25} color={isFocused ? '#673ab7' : '#222'} />
+            ? <Icon style={{textAlign:'center'}} name='history-edu' size={isFocused ? 30 : 25} color={isFocused ? '#ffff' : 'fafafa'} />
+            :<Icon style={{textAlign:'center'}} name='person' size={isFocused ? 30 : 25} color={isFocused ? '#ffff' : '#fafafa'} />
 
         const onPress = () => {
           const event = navigation.emit({
@@ -64,10 +64,10 @@ function MyTabBar({ state, descriptors, navigation }) {
             onLongPress={onLongPress}
             style={{ flex: 1 }}
           >
-            <View style={[tw`bg-black text-center`]}>
+            <View style={[tw`text-center`]}>
               {Icons}
             </View>
-            <Text style={[{ color: isFocused ? '#673ab7' : '#222' }, tw`text-center text-lg`]}>
+            <Text style={[{ color: isFocused ? '#ffff' : '#fafafa' }, tw`text-center text-lg`]}>
               {label}
             </Text>
           </TouchableOpacity>
