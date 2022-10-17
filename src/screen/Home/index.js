@@ -45,7 +45,7 @@ function Home(props) {
         </View>
         <View style={[tw`border-l-2 border-gray-300 bg-white mt-5 mb-2 ml-0.31 w-1/3`]}>
         <TouchableOpacity><Image style={[tw`h-17 w-17 ml-5 mb-1 justify-center items-center`]} source={require('../../assets/charge.png')}/></TouchableOpacity> 
-        <Text style={[tw`text-gray-500 text-xl font-semibold mt-1 ml-7 mb-3`]}>Charge</Text>
+        <Text style={[tw`text-gray-500 text-xl font-semibold mt-1 ml-5.7 mb-3`]}>Charge</Text>
         </View>
         </View>
       </View>
