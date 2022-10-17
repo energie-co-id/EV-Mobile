@@ -69,8 +69,6 @@ function Map(props) {
         <TouchableOpacity><Image style={[tw`w-full h-35 mt-3 mb-1 justify-center items-center`]} source={require('../../assets/test.jpg')}/></TouchableOpacity> 
         </View>
         </View>
-
-
         </View>
       </View>
     </ScrollView>
