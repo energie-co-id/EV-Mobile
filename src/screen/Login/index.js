@@ -40,10 +40,10 @@ function Login(props) {
       console.log(form);
       setLoading(true);
       if (mail === '') {
-        alert('email is required');
+        alert ('Email address is required');
       } else if (password === '') {
-        alert('password is required');
-      } else {
+        alert('Password is required');
+      } else  {
         // const result = await dispatch(redux_login(form));
         // console.log(result.value.data);
         // await AsyncStorage.setItem('token', result.value.data.data.token);
@@ -52,7 +52,7 @@ function Login(props) {
         //   result.value.data.data.refreshToken,
         // );
         // await AsyncStorage.setItem('id', result.value.data.data.id);
-        alert("oke login");
+        alert ("Welcome to Hyundai EV Mobile") ;
         props.navigation.navigate('AppScreen', {screen: 'Home'});
       }
       setLoading(false);

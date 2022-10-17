@@ -36,14 +36,14 @@ function Home(props) {
         <Text style={[tw`text-gray-500 text-2xl font-bold mt-5 ml-5`]}>Konsumsi Energi Anda</Text>
         <View style={[tw`flex flex-row`]}>
         <View style={[tw`bg-white mt-5 mb-2 w-1/3`]}>
-        <Text style={[tw`text-gray-500 text-2xl font-bold mt-5 ml-3`]}>◉ Hari Ini</Text>
+        <Text style={[tw`text-gray-500 text-xl font-bold mt-5 ml-5`]}>◉ Hari Ini</Text>
         <Text style={[tw`text-gray-500 text-xl font-normal`]}><Text style={[tw`text-gray-500 text-xl font-bold`]}>        5.4</Text> KwH </Text>
         </View>
         <View style={[tw`bg-white mt-5 mb-2 w-1/3`]}>
-        <Text style={[tw`text-gray-500 text-2xl font-bold mt-5`]}>◉ Bulan Ini</Text>
+        <Text style={[tw`text-gray-500 text-xl font-bold mt-5 ml-1`]}>◉ Bulan Ini</Text>
         <Text style={[tw`text-gray-500 text-xl font-normal`]}><Text style={[tw`text-gray-500 text-xl font-bold`]}>     40.7</Text> KwH </Text>
         </View>
-        <View style={[tw`border-l-2 border-gray-300 bg-white mt-5 mb-2 ml-0.31 w-1/3`]}>
+        <View style={[tw`border-l-2 border-gray-300 bg-white mt-5 mb-2 ml-0.21 w-1/3`]}>
         <TouchableOpacity><Image style={[tw`h-17 w-17 ml-5 mb-1 justify-center items-center`]} source={require('../../assets/charge.png')}/></TouchableOpacity> 
         <Text style={[tw`text-gray-500 text-xl font-semibold mt-1 ml-5.7 mb-3`]}>Charge</Text>
         </View>

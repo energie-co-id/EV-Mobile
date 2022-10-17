@@ -24,8 +24,11 @@ function Profile(props) {
   return (
     <ScrollView>
       <TouchableOpacity style={[tw`rounded-2xl h-60 m-5`]}>
-        <Text style={[tw `text-black text-lg text-center m-5`]}>
+        <Text style={[tw `text-black text-3xl text-center m-5`]}>
           Profile
+        </Text>
+        <Text style={[tw `text-black text-xl`]}>
+          Bio
         </Text>
         <TouchableOpacity onPress={() => props.navigation.navigate("AppScreen", {screen: 'Home'})}><Text>Home</Text></TouchableOpacity>
       </TouchableOpacity>
