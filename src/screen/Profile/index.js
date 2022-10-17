@@ -30,21 +30,20 @@ function Profile(props) {
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-5 w-5 mt-4.7 ml-1.7 justify-center items-center`]} source={require('../../assets/dropdown.png')}/></TouchableOpacity>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-5 w-5 mt-5.8 ml-59.5 justify-center items-center`]} source={require('../../assets/burger.png')}/></TouchableOpacity>  
         </View>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-20 w-20 mt-7 ml-3 justify-center items-center`]} source={require('../../assets/logo.png')}/></TouchableOpacity> 
-        <Text style={[tw`text-gray-700 text-xl font-semibold ml-7 mb-3`]}>Lucy</Text>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-20 w-20 mt-5 ml-3 justify-center items-center`]} source={require('../../assets/logo.png')}/></TouchableOpacity> 
+        <Text style={[tw`text-gray-700 text-xl font-semibold ml-9 mb-3`]}>Lucy</Text>
         </View>
-    
-         <View style={[tw`bg-gray-200 mt-17 w-1/4`]}>
+         <View style={[tw`bg-gray-200 mt-15 w-1/4`]}>
           <Text style={[tw`text-gray-700 text-xl font-bold mt-15 ml-7`]}>105K</Text>
           <Text style={[tw`text-gray-500 text-lg font-normal ml-5 mb-3`]}>Charged</Text>
         </View>
 
-        <View style={[tw`bg-gray-200 mt-17 w-1/4`]}>
+        <View style={[tw`bg-gray-200 mt-15 w-1/4`]}>
           <Text style={[tw`text-gray-700 text-xl font-bold mt-15 ml-5`]}>40.1K</Text>
           <Text style={[tw`text-gray-500 text-lg font-normal ml-5 mb-5`]}>Saved</Text>
         </View>
         
-        <View style={[tw`bg-gray-200 mt-17 w-1/4`]}>
+        <View style={[tw`bg-gray-200 mt-15 w-1/4`]}>
           <Text style={[tw`text-gray-700 text-xl font-bold mt-15 ml-7`]}>100</Text>
           <Text style={[tw`text-gray-500 text-lg font-normal ml-3 mb-3`]}>Stations</Text>
         </View>
