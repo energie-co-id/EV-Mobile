@@ -53,10 +53,12 @@ function Profile(props) {
          <View style={[tw`bg-gray-200`]}>
          <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`bg-gray-300 border-2 border-gray-200 ml-5 mr-5 mb-5`]}><Text style={[tw`text-gray-500 text-center text-lg font-bold`]}>Edit Profile</Text></TouchableOpacity>  
          </View>
-      {/* </View>  */}
-      <View style={[tw`h-117 bg-white`]}>
-      <TouchableOpacity onPress={() => props.navigation.navigate("AppScreen", {screen: 'Home'})}><Image source={require('../../assets/back.png')} style={[tw`h-15 w-15 mt-97 ml-71 justify-center items-center`]}/></TouchableOpacity>
-      {/* <TouchableOpacity onPress={() => props.navigation.navigate("AppScreen", {screen: 'Home'})}><Text>Home</Text></TouchableOpacity> */}
+      
+      <View style={[tw`h-121 bg-gray-100`]}>
+      <TouchableOpacity style={[tw`bg-gray-100 h-99 w-85`]}></TouchableOpacity>
+
+      <TouchableOpacity onPress={() => props.navigation.navigate("AppScreen", {screen: 'Home'})}><Image source={require('../../assets/back.png')} style={[tw`bg-gray-100 h-15 w-15 ml-71 justify-center items-center`]}/></TouchableOpacity>
+      
       </View>
         
     </ScrollView>
