@@ -51,8 +51,8 @@ function Home(props) {
         </View>
         
       <Text style={[tw`text-gray-500 text-2xl font-bold mt-5 ml-7`]}>Konsumsi Energi Tahun ini</Text>
-      <Text style={[tw`text-gray-500 text-lg text-justify mt-1 mr-5 ml-7 mb-3`]}>Hemat pengeluaran Anda dengan monitor konsumsi energi tiap kali anda charging. </Text>
-     <TouchableOpacity style={[tw`rounded-xl bg-gray-100 h-79 w-81 mt-5 ml-5`]}></TouchableOpacity>
+      <Text style={[tw`text-gray-500 text-sm text-justify mt-1 mr-5 ml-7 mb-1`]}>Hemat pengeluaran Anda dengan monitor konsumsi energi tiap kali {'\n'} {'\n'} {'\n'} anda charging. </Text>
+     <TouchableOpacity style={[tw`rounded-xl bg-gray-100 h-89 w-81 mt-2 ml-5`]}></TouchableOpacity>
     </View>
     </ScrollView>
     

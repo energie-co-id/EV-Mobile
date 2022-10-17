@@ -29,43 +29,43 @@ function History(props) {
       </View> 
 
       <View style={[tw`h-227 bg-white`]}>
-      <View style={[tw`rounded-xl bg-gray-200 mt-5 ml-5 mb-1 w-81 h-19`]}>
+      <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 mb-1 w-81 h-19`]}>
 
       </View>
 
-      <View style={[tw`rounded-xl bg-gray-200 mt-2 ml-5 mb-1 w-81 h-19`]}>
+      <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
 
       </View>
 
-     <View style={[tw`rounded-xl bg-gray-200 mt-2 ml-5 mb-1 w-81 h-19`]}>
+     <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
 
       </View>
 
-      <View style={[tw`rounded-xl bg-gray-200 mt-2 ml-5 mb-1 w-81 h-19`]}>
+      <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
 
       </View>
 
-      <View style={[tw`rounded-xl bg-gray-200 mt-2 ml-5 mb-1 w-81 h-19`]}>
+      <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
 
       </View>
 
-      <View style={[tw`rounded-xl bg-gray-200 mt-2 ml-5 mb-1 w-81 h-19`]}>
+      <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
 
       </View>
 
-      <View style={[tw`rounded-xl bg-gray-200 mt-2 ml-5 mb-1 w-81 h-19`]}>
+      <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
 
       </View>
 
-      <View style={[tw`rounded-xl bg-gray-200 mt-2 ml-5 mb-1 w-81 h-19`]}>
+      <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
 
       </View>
 
-      <View style={[tw`rounded-xl bg-gray-200 mt-2 ml-5 mb-1 w-81 h-19`]}>
+      <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
 
       </View>
 
-      <View style={[tw`rounded-xl bg-gray-200 mt-2 ml-5 mb-1 w-81 h-19`]}>
+      <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
 
       </View>
 
