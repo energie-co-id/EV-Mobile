@@ -32,26 +32,27 @@ function Home(props) {
       <Text style={[tw `text-gray-500 text-sm ml-7 mb-5`]}> New Thinking, New Posibilities </Text>
 
     <View style={[tw`h-170 bg-white`]}>
-      <View style={[tw`border-2 border-gray-200 rounded-xl bg-white mt-5 mr-5 ml-5 mb-2`]}>
-        <Text style={[tw`text-gray-500 text-2xl font-bold mt-5 ml-5`]}>Konsumsi Energi Anda</Text>
+       <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 mb-1 w-81 h-41`]}>
+         <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-2 ml-5 mb-2`]}>Konsumsi Energi Anda</Text>
         <View style={[tw`flex flex-row`]}>
-        <View style={[tw`bg-white mt-5 mb-2 w-1/3`]}>
-        <Text style={[tw`text-gray-500 text-xl font-bold mt-5 ml-5`]}>◉ Hari Ini</Text>
-        <Text style={[tw`text-gray-500 text-xl font-normal`]}><Text style={[tw`text-gray-500 text-xl font-bold`]}>        5.4</Text> KwH </Text>
+        <View style={[tw`bg-gray-100  mb-2 w-1/3`]}>
+         <Text style={[tw`text-gray-500 text-xl font-bold mt-5 ml-5`]}>◉ Hari Ini</Text>
+         <Text style={[tw`text-gray-500 text-xl font-normal`]}><Text style={[tw`text-gray-500 text-xl font-bold`]}>        5.4</Text> KwH </Text>
         </View>
-        <View style={[tw`bg-white mt-5 mb-2 w-1/3`]}>
-        <Text style={[tw`text-gray-500 text-xl font-bold mt-5 ml-1`]}>◉ Bulan Ini</Text>
-        <Text style={[tw`text-gray-500 text-xl font-normal`]}><Text style={[tw`text-gray-500 text-xl font-bold`]}>     40.7</Text> KwH </Text>
+        <View style={[tw`bg-gray-100 mb-2 w-1/3`]}>
+         <Text style={[tw`text-gray-500 text-xl font-bold mt-5 ml-2`]}>◉ Bulan Ini</Text>
+         <Text style={[tw`text-gray-500 text-xl font-normal`]}><Text style={[tw`text-gray-500 text-xl font-bold`]}>     40.7</Text> KwH </Text>
         </View>
-        <View style={[tw`border-l-2 border-gray-300 bg-white mt-5 mb-2 ml-0.21 w-1/3`]}>
-        <TouchableOpacity><Image style={[tw`h-17 w-17 ml-5 mb-1 justify-center items-center`]} source={require('../../assets/charge.png')}/></TouchableOpacity> 
-        <Text style={[tw`text-gray-500 text-xl font-semibold mt-1 ml-5.7 mb-3`]}>Charge</Text>
+         <View style={[tw`border-l-2 border-gray-500 bg-gray-100 mb-2 ml-0.21 w-1/3`]}>
+         <TouchableOpacity><Image style={[tw`h-17 w-17 ml-5 justify-center items-center`]} source={require('../../assets/charge.png')}/></TouchableOpacity> 
+         <Text style={[tw`text-gray-500 text-xl font-semibold mt-1 ml-6.5 mb-1`]}>Charge</Text>
         </View>
         </View>
-      </View>
+        </View>
+        
       <Text style={[tw`text-gray-500 text-2xl font-bold mt-5 ml-7`]}>Konsumsi Energi Tahun ini</Text>
       <Text style={[tw`text-gray-500 text-lg text-justify mt-1 mr-5 ml-7 mb-3`]}>Hemat pengeluaran Anda dengan monitor konsumsi energi tiap kali anda charging. </Text>
-     <TouchableOpacity style={[tw`bg-gray-200 h-69 w-80 mt-5 ml-5`]}></TouchableOpacity>
+     <TouchableOpacity style={[tw`rounded-xl bg-gray-100 h-79 w-81 mt-5 ml-5`]}></TouchableOpacity>
     </View>
     </ScrollView>
     
