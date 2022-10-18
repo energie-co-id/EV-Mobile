@@ -52,7 +52,7 @@ function Home(props) {
         
       <Text style={[tw`text-gray-500 text-2xl font-bold mt-2 ml-7`]}>Konsumsi Energi Tahun ini</Text>
       <Text style={[tw`text-gray-500 text-base text-justify mt-2 mr-5 ml-7 mb-1`]}>Hemat pengeluaran Anda dengan monitor konsumsi energi tiap kali anda charging.</Text>
-     <TouchableOpacity style={[tw`rounded-xl bg-gray-100 h-89 w-81 mt-2 ml-5`]}></TouchableOpacity>
+     <TouchableOpacity style={[tw`rounded-xl bg-gray-100 h-91 w-81 mt-2 ml-5`]}></TouchableOpacity>
     </View>
     </ScrollView>
     
