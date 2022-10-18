@@ -32,11 +32,11 @@ function Map(props) {
 
       <View>
       <View style={[tw`flex flex-row rounded-xl bg-gray-100 mt-5 ml-5 w-81 h-11`]}>
-      <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image source={require('../../assets/search.png')}
+      <TouchableOpacity onPress={() => props.navigation.navigate("Map")}><Image source={require('../../assets/search.png')}
          style={[tw`w-7 h-7 ml-3 mt-2 mb-2`]}/></TouchableOpacity> 
       <TextInput
       placeholder="Looking for Charger Station"
-      style={[tw`text-gray-700 text-base font-bold ml-1 mt-1.7`]}
+      style={[tw`text-gray-700 text-base font-bold ml-1`]}
       /> 
       </View>
       </View>
