@@ -10,7 +10,7 @@ import {
   TouchableOpacity,
   Button,
   ScrollView,
-  // TextInput,
+  TextInput,
   Image,
   // RefreshControl,
   // ActivityIndicator,
@@ -47,16 +47,45 @@ function Profile(props) {
           <Text style={[tw`text-gray-700 text-xl font-bold mt-15 ml-7`]}>100</Text>
           <Text style={[tw`text-gray-500 text-lg font-normal ml-3 mb-3`]}>Stations</Text>
         </View>
- 
-         </View>
-           <View style={[tw`bg-gray-100`]}>
-           <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`bg-gray-200 border-2 border-gray-100 ml-5 mr-5 mb-5`]}><Text style={[tw`text-gray-700 text-center text-lg font-bold p-1`]}>Edit Profile</Text></TouchableOpacity>  
-         </View>
+
+      </View>
+           
+      <View style={[tw`h-131 bg-white`]}>
+      <View style={[tw`flex flex-col bg-white p-5`]}>
+        <View style={[tw`bg-white`]}><Text style={[tw`mt-2 text-gray-500 text-2xl font-bold ml-5`]}>Edit Profile</Text></View>
+
+        <TextInput
+         placeholder="Enter your new username"
+         style={[tw` rounded-xl border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]}
+       />
+
+       <TextInput
+         placeholder="Re-type your new username"
+         style={[tw`  rounded-xl border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]}
+       />
+
+      <TextInput
+         placeholder="Enter your new password"
+         style={[tw` rounded-xl border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]}
+       />
+
+      <TextInput
+         placeholder="Re-type your new password"
+         style={[tw` rounded-xl border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]}
+       />
       
-      <View style={[tw`h-117 bg-gray-50`]}>
-      <TouchableOpacity style={[tw`bg-gray-50 ml-5 h-97 w-85`]}><Text>Test</Text></TouchableOpacity>
-      <TouchableOpacity onPress={() => props.navigation.navigate("AppScreen", {screen: 'Home'})}><Image source={require('../../assets/back.png')} style={[tw`bg-gray-50 h-14.1 w-14.1 mt-1 ml-71 justify-center items-center`]}/></TouchableOpacity>
-      
+      <Text style={[tw`text-base text-gray-500 text-xl mt-2 ml-5 font-bold`]}>Change Current Avatar</Text>
+      <Button
+       style={{fontSize: 20, color: 'green'}}
+       styleDisabled={{color: 'red'}}
+       onPress={() => this._handlePress()}
+      title="Press Me"
+      >
+      Press Me
+      </Button>
+       
+       </View>
+         <TouchableOpacity onPress={() => props.navigation.navigate("AppScreen", {screen: 'Home'})}><Image source={require('../../assets/back.png')} style={[tw`bg-gray-50 h-15 w-15 mt-15 ml-71 justify-center items-center`]}/></TouchableOpacity>
       </View>
         
     </ScrollView>
