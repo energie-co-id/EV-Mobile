@@ -34,13 +34,13 @@ function Profile(props) {
         <Text style={[tw`text-gray-700 text-xl font-semibold ml-9 mb-3`]}>Lucy</Text>
         </View>
          <View style={[tw`bg-gray-100 mt-15 w-1/4`]}>
-          <Text style={[tw`text-gray-700 text-xl font-bold mt-15 ml-7`]}>105K</Text>
+          <Text style={[tw`text-gray-700 text-xl font-bold mt-15 ml-7`]}>105 K</Text>
           <Text style={[tw`text-gray-500 text-lg font-normal ml-5 mb-3`]}>Charged</Text>
         </View>
 
         <View style={[tw`bg-gray-100 mt-15 w-1/4`]}>
-          <Text style={[tw`text-gray-700 text-xl font-bold mt-15 ml-5`]}>40.1K</Text>
-          <Text style={[tw`text-gray-500 text-lg font-normal ml-5 mb-5`]}>Saved</Text>
+          <Text style={[tw`text-gray-700 text-xl font-bold mt-15 ml-7`]}>5 H</Text>
+          <Text style={[tw`text-gray-500 text-lg font-normal ml-5 mb-3`]}>Spent</Text>
         </View>
         
         <View style={[tw`bg-gray-100 mt-15 w-1/4`]}>
