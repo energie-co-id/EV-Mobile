@@ -9,7 +9,7 @@ function MyTabBar({ state, descriptors, navigation }) {
   // console.log(descriptors)
   // console.log(navigation)
   return (
-    <View style={[tw`rounded-sm bg-gray-500 h-18.7 flex-row items-center`]}>
+    <View style={[tw`rounded-sm bg-gray-400 h-18.7 flex-row items-center`]}>
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
 
