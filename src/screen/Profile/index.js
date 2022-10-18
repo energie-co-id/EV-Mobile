@@ -55,7 +55,6 @@ function Profile(props) {
       
       <View style={[tw`h-117 bg-gray-100`]}>
       <TouchableOpacity style={[tw`bg-gray-100 h-97 w-85`]}></TouchableOpacity>
-
       <TouchableOpacity onPress={() => props.navigation.navigate("AppScreen", {screen: 'Home'})}><Image source={require('../../assets/back.png')} style={[tw`bg-gray-100 h-14.1 w-14.1 mt-1 ml-71 justify-center items-center`]}/></TouchableOpacity>
       
       </View>

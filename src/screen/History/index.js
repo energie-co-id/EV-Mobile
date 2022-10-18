@@ -32,70 +32,70 @@ function History(props) {
       <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 mb-1 w-81 h-19`]}>
       <View style={[tw`flex flex-row`]}>
       <TouchableOpacity onPress={() => props.navigation.navigate("History")}><Image source={require('../../assets/reverse.png')} style={[tw`w-11 h-11 ml-3 mt-4.5`]}/></TouchableOpacity>
-      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday,20th October 2022 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
+      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday, October 20, 2022 - 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
       </View>
       </View>
 
       <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
       <View style={[tw`flex flex-row`]}>
       <TouchableOpacity onPress={() => props.navigation.navigate("History")}><Image source={require('../../assets/reverse.png')} style={[tw`w-11 h-11 ml-3 mt-4.5`]}/></TouchableOpacity>
-      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday,20th October 2022 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
+      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday, October 20, 2022 - 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
       </View>
       </View>
 
      <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
      <View style={[tw`flex flex-row`]}>
      <TouchableOpacity onPress={() => props.navigation.navigate("History")}><Image source={require('../../assets/reverse.png')} style={[tw`w-11 h-11 ml-3 mt-4.5`]}/></TouchableOpacity>
-      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday,20th October 2022 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
+      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday, October 20, 2022 - 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
       </View>
       </View>
 
       <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
       <View style={[tw`flex flex-row`]}>
       <TouchableOpacity onPress={() => props.navigation.navigate("History")}><Image source={require('../../assets/reverse.png')} style={[tw`w-11 h-11 ml-3 mt-4.5`]}/></TouchableOpacity>
-      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday,20th October 2022 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
+      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday, October 20, 2022 - 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
       </View>
       </View>
 
       <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
       <View style={[tw`flex flex-row`]}>
       <TouchableOpacity onPress={() => props.navigation.navigate("History")}><Image source={require('../../assets/reverse.png')} style={[tw`w-11 h-11 ml-3 mt-4.5`]}/></TouchableOpacity>
-      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday,20th October 2022 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
+      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday, October 20, 2022 - 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
       </View>
       </View>
 
       <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
       <View style={[tw`flex flex-row`]}>
       <TouchableOpacity onPress={() => props.navigation.navigate("History")}><Image source={require('../../assets/reverse.png')} style={[tw`w-11 h-11 ml-3 mt-4.5`]}/></TouchableOpacity>
-      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday,20th October 2022 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
+      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday, October 20, 2022 - 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
       </View>
       </View>
 
       <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
       <View style={[tw`flex flex-row`]}>
       <TouchableOpacity onPress={() => props.navigation.navigate("History")}><Image source={require('../../assets/reverse.png')} style={[tw`w-11 h-11 ml-3 mt-4.5`]}/></TouchableOpacity>
-      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday,20th October 2022 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
+      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday, October 20, 2022 - 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
       </View>
       </View>
 
       <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
       <View style={[tw`flex flex-row`]}>
       <TouchableOpacity onPress={() => props.navigation.navigate("History")}><Image source={require('../../assets/reverse.png')} style={[tw`w-11 h-11 ml-3 mt-4.5`]}/></TouchableOpacity>
-      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday,20th October 2022 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
+      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday, October 20, 2022 - 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
       </View>
       </View>
 
       <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
       <View style={[tw`flex flex-row`]}>
       <TouchableOpacity onPress={() => props.navigation.navigate("History")}><Image source={require('../../assets/reverse.png')} style={[tw`w-11 h-11 ml-3 mt-4.5`]}/></TouchableOpacity>
-      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday,20th October 2022 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
+      <Text style={[tw`text-gray-500 font-normal text-center ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday, October 20, 2022 - 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
       </View>
       </View>
 
       <View style={[tw`rounded-xl bg-gray-100 mt-2 ml-5 mb-1 w-81 h-19`]}>
       <View style={[tw`flex flex-row`]}>
       <TouchableOpacity onPress={() => props.navigation.navigate("History")}><Image source={require('../../assets/reverse.png')} style={[tw`w-11 h-11 ml-3 mt-4.5`]}/></TouchableOpacity>
-      <Text style={[tw`text-gray-500 font-normal text-center ml-2.5 ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday,20th October 2022 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
+      <Text style={[tw`text-gray-500 font-normal text-center ml-2.5 ml-4.5 mt-5.5`]}><Text style={[tw`text-base text-gray-500 text-center font-bold`]}>Thursday, October 20, 2022 - 14:31</Text>{`\n`}Charged at Hyundai Station</Text>
       </View>
       </View>
 

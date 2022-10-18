@@ -40,7 +40,7 @@ function Login(props) {
       console.log(form);
       setLoading(true);
       if (mail === '') {
-        alert ('Email address is required');
+        alert  ('Email address is required');
       } else if (password === '') {
         alert('Password is required');
       } else  {
