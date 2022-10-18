@@ -33,7 +33,7 @@ function Home(props) {
 
     <View style={[tw`h-170 bg-white`]}>
        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 mb-1 w-81 h-41`]}>
-         <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-2 ml-5 mb-2`]}>Konsumsi Energi Anda</Text>
+       <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-2 ml-5 mb-2`]}>Konsumsi Energi Anda</Text>
         <View style={[tw`flex flex-row`]}>
         <View style={[tw`bg-gray-100  mb-2 w-1/3`]}>
          <Text style={[tw`text-gray-500 text-xl font-bold mt-5 ml-5`]}>◉ Hari Ini</Text>
@@ -50,8 +50,8 @@ function Home(props) {
         </View>
         </View>
         
-      <Text style={[tw`text-gray-500 text-2xl font-bold mt-5 ml-7`]}>Konsumsi Energi Tahun ini</Text>
-      <Text style={[tw`text-gray-500 text-sm text-justify mt-1 mr-5 ml-7 mb-1`]}>Hemat pengeluaran Anda dengan monitor konsumsi energi tiap kali {'\n'} {'\n'} {'\n'} anda charging. </Text>
+      <Text style={[tw`text-gray-500 text-2xl font-bold mt-2 ml-7`]}>Konsumsi Energi Tahun ini</Text>
+      <Text style={[tw`text-gray-500 text-base text-justify mt-2 mr-5 ml-7 mb-1`]}>Hemat pengeluaran Anda dengan monitor konsumsi energi tiap kali anda charging.</Text>
      <TouchableOpacity style={[tw`rounded-xl bg-gray-100 h-89 w-81 mt-2 ml-5`]}></TouchableOpacity>
     </View>
     </ScrollView>
