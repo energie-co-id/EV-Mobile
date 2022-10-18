@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
   // Button,
   ScrollView,
-  // TextInput,
+  TextInput,
   Image,
   // RefreshControl,
   // ActivityIndicator,
@@ -29,6 +29,17 @@ function Map(props) {
       </View> 
       <View style={[tw`h-282 bg-white`]}>
       <View style={[tw`flex flex-col`]}>
+
+      <View>
+      <View style={[tw`flex flex-row rounded-xl bg-gray-100 mt-5 ml-5 w-81 h-11`]}>
+      <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image source={require('../../assets/search.png')}
+         style={[tw`w-7 h-7 ml-3 mt-2 mb-2`]}/></TouchableOpacity> 
+      <TextInput
+      placeholder="Looking for Charger Station"
+      style={[tw`text-gray-700 text-base font-bold ml-1 mt-1.7`]}
+      /> 
+      </View>
+      </View>
 
         <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 mb-1 w-81 h-49`]}>
           <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-2 ml-5`]}>Serpong, Test</Text>
