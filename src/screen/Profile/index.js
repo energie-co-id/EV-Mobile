@@ -1,5 +1,4 @@
 import React from 'react';
-
 // import {useDispatch} from 'react-redux';
 // import {getAllMovie} from '../../store/action/movie';
 // import {REACT_APP_LINK_CLOUDINARY} from '@env';
@@ -49,44 +48,51 @@ function Profile(props) {
         </View>
 
       </View>
-           
+        
       <View style={[tw`h-131 bg-white`]}>
+        
       <View style={[tw`flex flex-col bg-white p-5`]}>
-        <View style={[tw`bg-white`]}><Text style={[tw`mt-2 text-gray-500 text-2xl font-bold ml-5`]}>Edit Profile</Text></View>
-
+      <View style={[tw`flex flex-row`]}>
+        <View style={[tw`bg-white`]}><Text style={[tw`mt-2 text-gray-700 text-2xl font-bold ml-5`]}>Edit Profile</Text></View>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-5 w-5 mt-4.7 ml-1.7 mb-2 justify-center items-center`]} source={require('../../assets/dropdown.png')}/></TouchableOpacity>
+      </View>
+        <View style={[tw`flex flex-row`]}>
         <TextInput
-         placeholder="Enter your new username"
-         style={[tw` rounded-xl border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]}
+         placeholder="First Name"
+         style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-1 pl-5 font-bold w-35`]}
        />
 
        <TextInput
-         placeholder="Re-type your new username"
-         style={[tw`  rounded-xl border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]}
+         placeholder="Last Name"
+         style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 pl-5 font-bold w-30`]}
        />
-
-      <TextInput
-         placeholder="Enter your new password"
-         style={[tw` rounded-xl border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]}
-       />
-
-      <TextInput
-         placeholder="Re-type your new password"
-         style={[tw` rounded-xl border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]}
-       />
-      
-      <Text style={[tw`text-base text-gray-500 text-xl mt-2 ml-5 font-bold`]}>Change Current Avatar</Text>
-      <Button
-       style={{fontSize: 20, color: 'green'}}
-       styleDisabled={{color: 'red'}}
-       onPress={() => this._handlePress()}
-      title="Press Me"
-      >
-      Press Me
-      </Button>
-       
        </View>
-         <TouchableOpacity onPress={() => props.navigation.navigate("AppScreen", {screen: 'Home'})}><Image source={require('../../assets/back.png')} style={[tw`bg-gray-50 h-15 w-15 mt-15 ml-71 justify-center items-center`]}/></TouchableOpacity>
+       
+       <View style={[tw`flex flex-row`]}>
+      <TextInput
+         placeholder="Email Address"
+         style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-1 pl-5 font-bold w-35`]}  
+       />
+
+      <TextInput
+         placeholder="Last Name"
+         style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 pl-5  font-bold w-30`]}
+       />
+       </View>
+       
+      <TextInput
+         placeholder="Password"
+         style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]}
+       />
+       
+      
+      <View style={[tw`rounded-sm p-1 font-mono font-semibold mt-3 ml-45 mr-7`]}>
+        
+        <Button title="Upload file" color={'#F3F4F6'} onPress={() => this._handlePress()} />
+
+       </View>
       </View>
+    </View>
         
     </ScrollView>
   );
