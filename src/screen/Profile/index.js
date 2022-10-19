@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+
 // import {useDispatch} from 'react-redux';
 // import {getAllMovie} from '../../store/action/movie';
 // import {REACT_APP_LINK_CLOUDINARY} from '@env';
@@ -19,6 +20,10 @@ import {
 import tw from 'twrnc';
 
 function Profile(props) {
+  const [isShown, setIsShown] = useState(false);
+  const handleClick = event => {
+    setIsShown(current => !current);
+  };
 
   return (
     <ScrollView>
@@ -54,49 +59,43 @@ function Profile(props) {
       <View style={[tw`flex flex-col bg-white p-5`]}>
       <View style={[tw`flex flex-row`]}>
         <View style={[tw`bg-white`]}><Text style={[tw`mt-2 text-gray-700 text-2xl font-bold ml-5`]}>Edit Profile</Text></View>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-5 w-5 mt-4.7 ml-1.7 mb-2 justify-center items-center`]} source={require('../../assets/dropdown.png')}/></TouchableOpacity>
+        <TouchableOpacity  onPress={handleClick}><Image style={[tw`h-5 w-5 mt-4.7 ml-1.7 mb-2 justify-center items-center`]} source={require('../../assets/dropdown.png')}/></TouchableOpacity>
       </View>
-        <View style={[tw`flex flex-row`]}>
-        <TextInput
-         placeholder="First Name"
-         style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-1 pl-5 font-bold w-35`]}
-       />
-
-       <TextInput
-         placeholder="Last Name"
-         style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 pl-5 font-bold w-30`]}
-       />
-       </View>
-       
-       <View style={[tw`flex flex-row`]}>
-      <TextInput
-         placeholder="Email Address"
-         style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-1 pl-5 font-bold w-35`]}  
-       />
-
-      <TextInput
-         placeholder="Last Name"
-         style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 pl-5  font-bold w-30`]}
-       />
-       </View>
-       
-      <TextInput
-         placeholder="Password"
-         style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]}
-       />
-       
-      
-      <View style={[tw`rounded-sm p-1 font-mono font-semibold mt-3 ml-45 mr-7`]}>
-        
-        <Button title="Upload file" color={'#F3F4F6'} onPress={() => this._handlePress()} />
-
-       </View>
+      {isShown && <Box />}
       </View>
     </View>
-        
     </ScrollView>
   );
 }
+
+function Box(){
+  return (
+    <><View style={[tw`flex flex-row`]}>
+      <TextInput
+        placeholder="First Name"
+        style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-1 pl-5 font-bold w-35`]} />
+
+      <TextInput
+        placeholder="Last Name"
+        style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 pl-5 font-bold w-30`]} />
+    </View><View style={[tw`flex flex-row`]}>
+        <TextInput
+          placeholder="Email Address"
+          style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-1 pl-5 font-bold w-35`]} />
+
+        <TextInput
+          placeholder="Last Name"
+          style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 pl-5  font-bold w-30`]} />
+      </View><TextInput
+        placeholder="Password"
+        style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]} /><View style={[tw`rounded-sm p-1 font-mono font-semibold mt-3 ml-45 mr-7`]}>
+
+        <Button title="Upload file" color={'#F3F4F6'} onPress={() => this._handlePress()} />
+
+      </View></>
+  );
+}
+
 
 
 export default (Profile);
