@@ -42,8 +42,8 @@ function Profile(props) {
         <Text style={[tw`text-gray-700 text-sm font-semibold mt-2 ml-9 mb-3`]}>My Bio</Text>
         </View>
          <View style={[tw`bg-gray-100 mt-15 ml-2 w-1/4`]}>
-          <Text style={[tw`text-gray-700 text-xl font-bold mt-7 ml-7`]}>105 K</Text>
-          <Text style={[tw`text-gray-500 text-lg font-normal ml-5 mb-3`]}>Charged</Text>
+          <Text style={[tw`text-gray-700 text-xl font-bold mt-7 ml-7`]}>105</Text>
+          <Text style={[tw`text-gray-500 text-lg font-normal ml-5 mb-3`]}>Usaged</Text>
         </View>
 
         <View style={[tw`bg-gray-100 mt-15 w-1/4`]}>
@@ -57,8 +57,6 @@ function Profile(props) {
         </View>
 
       </View>
-       
-
       <View style={[tw`h-151 bg-white`]}>
       <View style={[tw`flex flex-col bg-white pl-5 px-5 py-1`]}>
       <View  style={[tw`flex flex-row bg-gray-50`]}>
