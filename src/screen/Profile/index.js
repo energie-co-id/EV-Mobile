@@ -28,9 +28,11 @@ function Profile(props) {
   return (
     <ScrollView>
         <View style={[tw`flex flex-row bg-gray-100`]}>
-         <View style={[tw`bg-gray-100 mt-5 ml-0.21 w-1/4`]}>
+         <View style={[tw`bg-gray-100 mt-5 ml-0.9 w-1/4`]}>
           <View style={[tw`flex flex-row bg-gray-100`]}>
-           <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-5 w-5 mt-5.8 ml-59.5 justify-center items-center`]} source={require('../../assets/burger.png')}/></TouchableOpacity>  
+           <Text style={[tw`bg-gray-100 text-gray-700 text-xl font-semibold ml-5 mt-3`]}>Profile</Text>
+
+           <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-5 w-5 mt-5.8 ml-56.5 justify-center items-center`]} source={require('../../assets/burger.png')}/></TouchableOpacity>  
         </View>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-20 w-20 mt-5 ml-3 justify-center items-center`]} source={require('../../assets/logo.png')}/></TouchableOpacity> 
         <Text style={[tw`text-gray-700 text-xl font-semibold ml-9 mb-3`]}>Lucy</Text>
@@ -88,14 +90,14 @@ function Box(){
         <TextInput
           placeholder="Phone Number"
           style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 pl-5  font-bold w-30`]} />
+
       </View><TextInput
         placeholder="Password"
         autoComplete="password"
         secureTextEntry={true}
-        onChangeText={newText => setPassword(newText)}
-        style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]} /><View style={[tw`rounded-sm p-1 font-mono font-semibold mt-3 ml-45 mr-7`]}>
+        style={[tw`rounded-sm border-2 border-gray-300 bg-gray-300 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]} /><View style={[tw`rounded-sm p-1 font-mono font-semibold mt-3 ml-45 mr-7`]}>
         
-        <Button title="Upload file" color={'#F3F4F6'} onPress={() => this._handlePress()} />
+        <Button title="Upload file" color={'#D1D5DB'} onPress={() => this._handlePress()} />
 
       </View></>
   );
