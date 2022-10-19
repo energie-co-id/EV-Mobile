@@ -81,15 +81,22 @@ function Box(){
     </View><View style={[tw`flex flex-row`]}>
         <TextInput
           placeholder="Email Address"
-          style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-1 pl-5 font-bold w-35`]} />
-
+          autoComplete="email"
+          keyboardType="email-address"
+          style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-1 pl-5 font-bold w-35`]} 
+          onChangeText={newText => setMail(newText)}
+          />
+    
         <TextInput
-          placeholder="Last Name"
+          placeholder="Phone Number"
           style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 pl-5  font-bold w-30`]} />
       </View><TextInput
         placeholder="Password"
+        autoComplete="password"
+        secureTextEntry={true}
+        onChangeText={newText => setPassword(newText)}
         style={[tw`rounded-sm border-2 border-gray-100 bg-gray-100 text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 font-bold`]} /><View style={[tw`rounded-sm p-1 font-mono font-semibold mt-3 ml-45 mr-7`]}>
-
+        
         <Button title="Upload file" color={'#F3F4F6'} onPress={() => this._handlePress()} />
 
       </View></>
