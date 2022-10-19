@@ -134,7 +134,7 @@ function Box1 (){
         keyboardType="email-address"
         style={[tw`rounded-sm border-2 border-gray-100 bg-white text-base text-gray-500 mt-2 ml-11 mr-12 pl-5 py-1 font-bold`]} />
     </View>
-      <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold mt-2 ml-51 mr-11 mb-5`]}><Text style={[tw`pl-5 mt-2 ml-3 mr-5 mb-2 text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
+      <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold mt-2 ml-51 mr-12 mb-5`]}><Text style={[tw`pl-5 mt-2 ml-3 mr-7 mb-2 text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
       </>
   );
 
@@ -146,11 +146,11 @@ function Box2 (){
         <Text style={[tw`rounded-sm border-2 border-gray-200 bg-gray-200 text-gray-500 text-center mt-2 ml-11 pl-5 px-5 py-2`]}>+62</Text>
       <TextInput
         placeholder="Phone Number"
-        autoComplete="tel"
-        style={[tw`rounded-sm border-2 border-gray-100 bg-white text-base text-gray-500 mt-2 mr-17 px-23 pl-3 py-1 font-bold`]} />
+        autoComplete="cc-number"
+        style={[tw`rounded-sm border-2 border-gray-100 bg-white text-base text-gray-500 mt-2 mr-17 px-25 pl-3 py-1 font-bold`]} />
     </View>
     </View>
-      <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold mt-2 ml-51 mr-11 mb-5`]}><Text style={[tw`pl-5 mt-2 ml-3 mr-5 mb-2 text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
+      <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold mt-2 ml-51 mr-12 mb-5`]}><Text style={[tw`pl-5 mt-2 ml-3 mr-5 mb-2 text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
       </>
   );
 
@@ -170,7 +170,7 @@ function Box3 (){
         secureTextEntry={true}
         style={[tw`rounded-sm border-2 border-gray-100 bg-white text-base text-gray-500 mt-2 ml-11 mr-12 pl-5 py-1 font-bold`]} />
     </View>
-      <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold mt-2 ml-51 mr-11 mb-5`]}><Text style={[tw`pl-5 mt-2 ml-3 mr-5 mb-2 text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
+      <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold mt-2 ml-51 mr-12 mb-5`]}><Text style={[tw`pl-5 mt-2 ml-3 mr-5 mb-2 text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
       </>
   );
 
