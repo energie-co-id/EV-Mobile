@@ -30,8 +30,6 @@ function Profile(props) {
         <View style={[tw`flex flex-row bg-gray-100`]}>
          <View style={[tw`bg-gray-100 mt-5 ml-0.21 w-1/4`]}>
           <View style={[tw`flex flex-row bg-gray-100`]}>
-           <Text style={[tw`bg-gray-100 text-gray-700 text-lg font-semibold ml-5 mt-3`]}>Lucy</Text>
-            <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-5 w-5 mt-4.7 ml-1.7 justify-center items-center`]} source={require('../../assets/dropdown.png')}/></TouchableOpacity>
            <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-5 w-5 mt-5.8 ml-59.5 justify-center items-center`]} source={require('../../assets/burger.png')}/></TouchableOpacity>  
         </View>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-20 w-20 mt-5 ml-3 justify-center items-center`]} source={require('../../assets/logo.png')}/></TouchableOpacity> 
