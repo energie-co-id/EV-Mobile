@@ -279,8 +279,6 @@ dependencies {
         implementation jscFlavor
     }
 
-    compile project(':react-native-scan-barcode')
-
 }
 
 if (isNewArchitectureEnabled()) {
