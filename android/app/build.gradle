@@ -280,6 +280,7 @@ dependencies {
     }
 
     compile project(':react-native-scan-barcode')
+
 }
 
 if (isNewArchitectureEnabled()) {

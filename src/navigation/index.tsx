@@ -8,7 +8,6 @@ import SpleshScreen from '../screen/SpleshScreen';
 import Profile from '../screen/Profile';
 import AuthScreen from './auth';
 import AppScreen from './app';
-import Scanner from '../screen/Scanner';
 
 function MyStackNavigator() {
   return (

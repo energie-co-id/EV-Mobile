@@ -10,8 +10,8 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.config.ReactFeatureFlags;
 import com.facebook.soloader.SoLoader;
 import com.evcmscar.newarchitecture.MainApplicationReactNativeHost;
+import com.evcmscar.barcodescanner.BarcodeScannerPackage;
 import java.lang.reflect.InvocationTargetException;
-import com.safaeean.barcodescanner.BarcodeScannerPackage;
 import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
@@ -23,7 +23,7 @@ public class MainApplication extends Application implements ReactApplication {
         new BarcodeScannerPackage()
       );
     }
-
+  
   private final ReactNativeHost mReactNativeHost =
       new ReactNativeHost(this) {
         @Override
