@@ -122,9 +122,9 @@ function Login(props) {
      )}
    </View>
    <View style={[tw`justify-center flex-row`]}>
-     <Text style={[tw`font-mono text-gray-500`]}>Don’t have an account?</Text>
+     <Text style={[tw`font-mono text-gray-500 mr-1`]}>Don’t have an account?</Text>
      <TouchableOpacity onPress={handleRegister}>
-       <Text style={[tw`text-gray-700 font-mono`]}> {'  '}Sign Up</Text>
+       <Text style={[tw`text-gray-700 font-mono`]}>Sign Up</Text>
      </TouchableOpacity>
    </View>
  </ScrollView>

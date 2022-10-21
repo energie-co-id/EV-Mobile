@@ -106,11 +106,10 @@ function Register(props) {
           />
         </View>
         <View>
-        <Text style={[tw`text-gray-700 text-justify font-mono mt-2 mb-1`]}> By registering, you confirm that you accept our</Text>
-        <Text style={[tw`text-gray-700 text-justify font-mono mt-0.1`]}>Terms of Use and Privacy Policy </Text>
+        <Text style={[tw`text-gray-700 text-justify font-mono mt-2 mb-1`]}>By registering, you confirm that you accept our Terms of Use and Privacy Policy </Text>
         </View>
       </View>
-      <View style={[tw`border-gray-500 rounded-xl bg-gray-500 p-1 font-mono font-semibold mt-3`]}>
+      <View style={[tw`border-gray-500 rounded-xl bg-gray-500 p-1 font-mono font-semibold mt-3 mb-1`]}>
      {loading === true ? (
        <ActivityIndicator size="large" color="white" />
      ) : (
@@ -118,9 +117,9 @@ function Register(props) {
      )}
    </View>
       <View style={[tw`justify-center flex-row`]}>
-        <Text style={[tw`font-mono text-gray-500`]}>Already have an account?</Text>
+        <Text style={[tw`font-mono text-gray-500 mr-1`]}>Already have an account?</Text>
         <TouchableOpacity onPress={handleLogin}>
-          <Text style={[tw`text-gray-700 font-mono`]}> {'  '}Login</Text>
+          <Text style={[tw`text-gray-700 font-mono`]}>Login</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
