@@ -20,7 +20,6 @@ MERGED from [:react-native-webview] C:\Users\Sythe\Documents\EV-Mobile\node_modu
 MERGED from [com.facebook.react:react-native:0.70.1] C:\Users\Sythe\.gradle\caches\transforms-3\52dc46a592dc383805ce46fda8bdc1a4\transformed\jetified-react-native-0.70.1-debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Sythe\.gradle\caches\transforms-3\4aa3daa4c119e5ebf154ad11d072f485\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.react:hermes-engine:0.70.1] C:\Users\Sythe\.gradle\caches\transforms-3\bcd6bd1e1d5966599565f814c2f77aa2\transformed\jetified-hermes-engine-0.70.1-debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-reanimated] C:\Users\Sythe\Documents\EV-Mobile\node_modules\react-native-reanimated\android\build\.transforms\29d1cb7f574c525d6d677bac9e7988e3\transformed\jetified-react-native-reanimated-70-hermes\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\Sythe\.gradle\caches\transforms-3\254be36e6f6eb176e072fd687d368667\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:stetho:2.6.0] C:\Users\Sythe\.gradle\caches\transforms-3\e90babe485946eeebe0b18572938e7fb\transformed\jetified-stetho-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fresco:2.6.0] C:\Users\Sythe\.gradle\caches\transforms-3\6bf0185b9b85a5b617e433ea49b9063b\transformed\jetified-fresco-2.6.0\AndroidManifest.xml:2:1-9:12
@@ -270,8 +269,6 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Syth
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Sythe\.gradle\caches\transforms-3\4aa3daa4c119e5ebf154ad11d072f485\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.facebook.react:hermes-engine:0.70.1] C:\Users\Sythe\.gradle\caches\transforms-3\bcd6bd1e1d5966599565f814c2f77aa2\transformed\jetified-hermes-engine-0.70.1-debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:hermes-engine:0.70.1] C:\Users\Sythe\.gradle\caches\transforms-3\bcd6bd1e1d5966599565f814c2f77aa2\transformed\jetified-hermes-engine-0.70.1-debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-reanimated] C:\Users\Sythe\Documents\EV-Mobile\node_modules\react-native-reanimated\android\build\.transforms\29d1cb7f574c525d6d677bac9e7988e3\transformed\jetified-react-native-reanimated-70-hermes\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-reanimated] C:\Users\Sythe\Documents\EV-Mobile\node_modules\react-native-reanimated\android\build\.transforms\29d1cb7f574c525d6d677bac9e7988e3\transformed\jetified-react-native-reanimated-70-hermes\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\Sythe\.gradle\caches\transforms-3\254be36e6f6eb176e072fd687d368667\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\Sythe\.gradle\caches\transforms-3\254be36e6f6eb176e072fd687d368667\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:stetho:2.6.0] C:\Users\Sythe\.gradle\caches\transforms-3\e90babe485946eeebe0b18572938e7fb\transformed\jetified-stetho-2.6.0\AndroidManifest.xml:5:5-7:41

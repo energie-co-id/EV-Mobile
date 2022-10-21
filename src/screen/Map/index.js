@@ -23,7 +23,7 @@ function Map(props) {
   return (
     <ScrollView>
       <View style={[tw`flex flex-row`]}>
-      <Text style={[tw`text-gray-500 font-normal text-center ml-13 mt-9`]}><Text style={[tw `text-3xl text-gray-500 text-center font-bold`]}> Location </Text>{`\n`}   This located EV Charging Nearby </Text>
+      <Text style={[tw`text-gray-500 font-normal ml-7 mt-9`]}><Text style={[tw `text-3xl text-gray-500 text-center font-bold`]}>Location</Text>{`\n`}This located EV Charging Nearby</Text>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image source={require('../../assets/logo.png')}
          style={[tw`w-20 h-20 ml-3 mt-5 mb-5`]}/></TouchableOpacity>
       </View> 

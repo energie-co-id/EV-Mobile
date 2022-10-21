@@ -43,7 +43,7 @@ function Profile(props) {
         <View style={[tw`flex flex-row bg-gray-100`]}>
          <View style={[tw`bg-gray-100 mt-5 w-1/4`]}>
           <View style={[tw`flex flex-row bg-gray-100`]}>
-          <Text style={[tw`bg-gray-100 text-gray-700 text-xl font-semibold ml-4.7 mt-3`]}>Hyundai</Text>
+          <Text style={[tw`bg-gray-100 text-gray-700 text-xl font-semibold ml-3 mt-3`]}>Hyundai</Text>
           <Text style={[tw`bg-gray-100 text-gray-700 text-xl font-semibold ml-1.5 mt-3`]}></Text>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image style={[tw`h-5 w-5 mt-5.8 ml-57.5 justify-center items-center`]} source={require('../../assets/burger.png')}/></TouchableOpacity>  
         </View>
@@ -66,34 +66,30 @@ function Profile(props) {
 
       </View>
       <View style={[tw`h-171 bg-white`]}>
-      <View style={[tw`flex flex-col bg-white pl-5 px-5 py-1`]}>
+      <View style={[tw`flex flex-col bg-gray-50 pl-5 px-5 py-1`]}>
       <View  style={[tw`flex flex-row bg-gray-50`]}>
-        <View style={[tw`bg-white`]}><Text onPress={handleClick} style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5`]}>Hyundai</Text></View>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-30 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
-        <TouchableOpacity onPress={handleClick}><Image style={[tw`h-5 w-5 mt-3.5 ml-5 mb-2 justify-center items-center`]} source={require('../../assets/change.png')}/></TouchableOpacity>
+        <View style={[tw`bg-gray-50`]}><Text onPress={handleClick} style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5`]}>Hyundai</Text></View>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-41 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
       </View>
       {isShown && <Box />}
       </View>
       <View  style={[tw`flex flex-row bg-gray-50`]}>
-        <View style={[tw`bg-white`]}><Text onPress={handleClickEmail} style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>Blecky@gmail.com</Text></View>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-11 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
-        <TouchableOpacity onPress={handleClickEmail}><Image style={[tw`h-5 w-5 mt-3.5 ml-5 mb-2 justify-center items-center`]} source={require('../../assets/change.png')}/></TouchableOpacity>
+        <View style={[tw`bg-gray-50`]}><Text onPress={handleClickEmail} style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>Blecky@gmail.com</Text></View>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-18 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
       </View>
       <View>
       {isShownEmail && <Box1 />}
       </View>
       <View  style={[tw`flex flex-row bg-gray-50`]}>
-        <View style={[tw`bg-white`]}><Text onPress={handleClickNumber} style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>895990090090</Text></View>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-15 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
-        <TouchableOpacity onPress={handleClickNumber}><Image style={[tw`h-5 w-5 mt-3.5 ml-5 mb-2 justify-center items-center`]} source={require('../../assets/change.png')}/></TouchableOpacity>
+        <View style={[tw`bg-gray-50`]}><Text onPress={handleClickNumber} style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>+62895990090090</Text></View>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-16 mt-2 mb-3 p-2  `]}><Text style={[tw`text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
       </View>
       <View>
       {isShownNumber && <Box2 />}
       </View>
       <View  style={[tw`flex flex-row bg-gray-50`]}>
-        <View style={[tw`bg-white`]}><Text onPress={handleClickPassword} style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>Password</Text></View>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-26.5 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
-        <TouchableOpacity onPress={handleClickPassword}><Image style={[tw`h-5 w-5 mt-3.5 ml-5 mb-2 justify-center items-center`]} source={require('../../assets/change.png')}/></TouchableOpacity>
+        <View style={[tw`bg-gray-50`]}><Text onPress={handleClickPassword} style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>Password</Text></View>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-38 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
       </View>
       <View>
       {isShownPassword && <Box3 />}
@@ -145,7 +141,7 @@ function Box2 (){
   return (
     <><View>
       <View style={[tw`flex flex-row mb-5`]} >
-        <Text style={[tw`rounded-sm border-2 border-gray-200 bg-gray-200 text-gray-500 text-center mt-2 ml-11 pl-5 px-5 py-2`]}>+62</Text>
+        <Text style={[tw`rounded-sm border-2 border-gray-200 bg-gray-200 text-gray-500 text-center mt-2 ml-11 pl-5 px-5 py-3`]}>+62</Text>
       <TextInput
         placeholder="Phone Number"
         autoComplete="tel"

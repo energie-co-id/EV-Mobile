@@ -21,8 +21,6 @@ import com.henninghall.date_picker.DatePickerPackage;
 import com.imagepicker.ImagePickerPackage;
 // react-native-push-notification
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
-// react-native-reanimated
-import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
@@ -81,7 +79,6 @@ public class PackageList {
       new DatePickerPackage(),
       new ImagePickerPackage(),
       new ReactNativePushNotificationPackage(),
-      new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
       new VectorIconsPackage(),
