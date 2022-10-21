@@ -11,9 +11,18 @@ import com.facebook.react.config.ReactFeatureFlags;
 import com.facebook.soloader.SoLoader;
 import com.evcmscar.newarchitecture.MainApplicationReactNativeHost;
 import java.lang.reflect.InvocationTargetException;
+import com.safaeean.barcodescanner.BarcodeScannerPackage;
 import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
+  
+   @Override
+    protected List<ReactPackage> getPackages() {
+      return Arrays.<ReactPackage>asList(
+        new MainReactPackage(),
+        new BarcodeScannerPackage()
+      );
+    }
 
   private final ReactNativeHost mReactNativeHost =
       new ReactNativeHost(this) {

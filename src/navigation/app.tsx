@@ -9,7 +9,7 @@ import Home from '../screen/Home';
 import History from '../screen/History';
 import Map from '../screen/Map';
 import TabContent from '../component/TabContent'
-import Scanner from '../screen/Scanner'
+import ScanBarcodeApp from '../screen/Scanner'
 
 const Tab = createBottomTabNavigator();
 
@@ -22,7 +22,7 @@ function HomeStackScreen() {
         options={{headerShown: false}}
       />
      <Stack.Screen
-        component={Scanner}
+        component={ScanBarcodeApp}
         name="ScannerStack"
         options={{headerShown: false}}
       />
