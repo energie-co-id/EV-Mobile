@@ -114,7 +114,7 @@ function Login(props) {
      </TouchableOpacity> 
    </View>
    </View>
-   <View style={[tw`border-gray-500 rounded-xl bg-gray-500 p-1 font-mono font-semibold mt-3`]}>
+   <View style={[tw`border-gray-500 rounded-xl bg-gray-500 p-1 font-mono font-semibold mt-3 mb-1`]}>
      {loading === true ? (
        <ActivityIndicator size="large" color="white" />
      ) : (
