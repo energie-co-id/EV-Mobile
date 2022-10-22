@@ -9,6 +9,8 @@ import Profile from '../screen/Profile';
 import AuthScreen from './auth';
 import AppScreen from './app';
 import BarcodeScanner from '../screen/BarcodeScanner';
+import Charge from '../screen/Charge'
+
 
 function MyStackNavigator() {
   return (
@@ -37,6 +39,11 @@ function MyStackNavigator() {
         <Stack.Screen
           component={BarcodeScanner}
           name="BarcodeScanner"
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          component={Charge}
+          name="Charge"
           options={{headerShown: false}}
         />
       </Stack.Navigator>

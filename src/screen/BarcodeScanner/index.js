@@ -26,7 +26,7 @@ const BarcodeScanner = (props) => {
       <View style={[tw`h-161 bg-white`]}>
         <View style={[tw`border-dashed rounded-xl border-2 border-gray-700 bg-gray-100 mt-35 ml-19 w-55 h-55`]}>
         </View> 
-        <TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")} style={[tw`rounded-xl border-gray-200 bg-gray-200 font-mono font-semibold ml-5 mr-5 mt-31 py-2`]}><Text style={[tw`text-xl text-gray-700 font-bold font-mono ml-27`]}>Masukan ID</Text></TouchableOpacity>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Charge")} style={[tw`rounded-xl border-gray-200 bg-gray-200 font-mono font-semibold ml-5 mr-5 mt-31 py-2`]}><Text style={[tw`text-xl text-gray-700 font-bold font-mono ml-27`]}>Masukan ID</Text></TouchableOpacity>
      </View>
     </ScrollView>
   )
