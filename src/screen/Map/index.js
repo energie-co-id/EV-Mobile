@@ -27,7 +27,7 @@ function Map(props) {
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image source={require('../../assets/logo.png')}
          style={[tw`w-20 h-20 ml-3 mt-5 mb-5`]}/></TouchableOpacity>
       </View> 
-      <View style={[tw`h-282 bg-white`]}>
+      <View style={[tw`h-291 bg-white`]}>
       <View style={[tw`flex flex-col`]}>
       <View>
       <View style={[tw`flex flex-row rounded-xl bg-gray-100 mt-5 ml-5 w-81 h-11`]}>
@@ -39,44 +39,49 @@ function Map(props) {
       /> 
       </View>
       </View>
-        <View style={[tw`rounded-xl bg-gray-100 mt-3 ml-5 mb-2 w-81 h-49`]}>
+        <View style={[tw`rounded-xl bg-gray-100 mt-3 ml-5 mb-2 w-81 h-49`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
           <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-2 ml-5`]}>Serpong, Test</Text>
           <Text style={[tw`text-gray-500 text-sm font-normal bg-gray-100 ml-5`]}>Serpong, Test</Text>
         <View style={[tw`bg-gray-100 mb-2 ml-0.21`]}>
-         <TouchableOpacity><Image style={[tw`w-full h-35 mt-3 mb-1 justify-center items-center`]} source={require('../../assets/test.jpg')}/></TouchableOpacity> 
+         <View><Image style={[tw`w-full h-35 mt-3 mb-1 justify-center items-center`]} source={require('../../assets/test.jpg')}/></View> 
         </View>
+        </TouchableOpacity>
         </View>
 
-        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 mb-2 w-81 h-49`]}>
+        <View style={[tw`rounded-xl bg-gray-100 mt-3 ml-5 mb-2 w-81 h-49`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
           <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-2 ml-5`]}>Serpong, Test</Text>
           <Text style={[tw`text-gray-500 text-sm font-normal bg-gray-100 ml-5`]}>Serpong, Test</Text>
         <View style={[tw`bg-gray-100 mb-2 ml-0.21`]}>
-        <TouchableOpacity><Image style={[tw`w-full h-35 mt-3 mb-1 justify-center items-center`]} source={require('../../assets/test.jpg')}/></TouchableOpacity> 
+         <View><Image style={[tw`w-full h-35 mt-3 mb-1 justify-center items-center`]} source={require('../../assets/test.jpg')}/></View> 
         </View>
+        </TouchableOpacity>
         </View>
 
-        <View style={[tw`rounded-xl bg-gray-100 mt-5.5 ml-5 mb-2 w-81 h-49`]}>
+        <View style={[tw`rounded-xl bg-gray-100 mt-3 ml-5 mb-2 w-81 h-49`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
           <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-2 ml-5`]}>Serpong, Test</Text>
           <Text style={[tw`text-gray-500 text-sm font-normal bg-gray-100 ml-5`]}>Serpong, Test</Text>
         <View style={[tw`bg-gray-100 mb-2 ml-0.21`]}>
-        <TouchableOpacity><Image style={[tw`w-full h-35 mt-3 mb-1 justify-center items-center`]} source={require('../../assets/test.jpg')}/></TouchableOpacity> 
+         <View><Image style={[tw`w-full h-35 mt-3 mb-1 justify-center items-center`]} source={require('../../assets/test.jpg')}/></View> 
         </View>
+        </TouchableOpacity>
         </View>
 
-        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 mb-2 w-81 h-49`]}>
+        <View style={[tw`rounded-xl bg-gray-100 mt-3 ml-5 mb-2 w-81 h-49`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
           <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-2 ml-5`]}>Serpong, Test</Text>
           <Text style={[tw`text-gray-500 text-sm font-normal bg-gray-100 ml-5`]}>Serpong, Test</Text>
         <View style={[tw`bg-gray-100 mb-2 ml-0.21`]}>
-        <TouchableOpacity><Image style={[tw`w-full h-35 mt-3 mb-1 justify-center items-center`]} source={require('../../assets/test.jpg')}/></TouchableOpacity> 
+         <View><Image style={[tw`w-full h-35 mt-3 mb-1 justify-center items-center`]} source={require('../../assets/test.jpg')}/></View> 
         </View>
+        </TouchableOpacity>
         </View>
 
-        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 mb-2 w-81 h-49`]}>
+        <View style={[tw`rounded-xl bg-gray-100 mt-3 ml-5 mb-2 w-81 h-49`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
           <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-2 ml-5`]}>Serpong, Test</Text>
           <Text style={[tw`text-gray-500 text-sm font-normal bg-gray-100 ml-5`]}>Serpong, Test</Text>
         <View style={[tw`bg-gray-100 mb-2 ml-0.21`]}>
-        <TouchableOpacity><Image style={[tw`w-full h-35 mt-3 mb-1 justify-center items-center`]} source={require('../../assets/test.jpg')}/></TouchableOpacity> 
+         <View><Image style={[tw`w-full h-35 mt-3 mb-1 justify-center items-center`]} source={require('../../assets/test.jpg')}/></View> 
         </View>
+        </TouchableOpacity>
         </View>
         </View>
       </View>

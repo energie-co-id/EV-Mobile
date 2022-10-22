@@ -65,31 +65,31 @@ function Profile(props) {
         </View>
 
       </View>
-      <View style={[tw`h-171 bg-white`]}>
+      <View style={[tw`h-201 bg-white`]}>
       <View style={[tw`flex flex-col bg-gray-50 pl-5 px-5 py-1`]}>
       <View  style={[tw`flex flex-row bg-gray-50`]}>
-        <View style={[tw`bg-gray-50`]}><Text onPress={handleClick} style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5`]}>Hyundai</Text></View>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-41 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
+        <View style={[tw`bg-gray-50`]}><Text style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5`]}>Hyundai</Text></View>
+        <TouchableOpacity onPress={handleClick} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-41 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Change</Text></TouchableOpacity>
       </View>
       {isShown && <Box />}
       </View>
       <View  style={[tw`flex flex-row bg-gray-50`]}>
-        <View style={[tw`bg-gray-50`]}><Text onPress={handleClickEmail} style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>Blecky@gmail.com</Text></View>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-18 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
+        <View style={[tw`bg-gray-50`]}><Text style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>Blecky@gmail.com</Text></View>
+        <TouchableOpacity  onPress={handleClickEmail} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-18 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Change</Text></TouchableOpacity>
       </View>
       <View>
       {isShownEmail && <Box1 />}
       </View>
       <View  style={[tw`flex flex-row bg-gray-50`]}>
-        <View style={[tw`bg-gray-50`]}><Text onPress={handleClickNumber} style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>+62895990090090</Text></View>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-16 mt-2 mb-3 p-2  `]}><Text style={[tw`text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
+        <View style={[tw`bg-gray-50`]}><Text  style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>+62895990090090</Text></View>
+        <TouchableOpacity onPress={handleClickNumber} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-16 mt-2 mb-3 p-2  `]}><Text style={[tw`text-gray-500 font-bold`]}>Change</Text></TouchableOpacity>
       </View>
       <View>
       {isShownNumber && <Box2 />}
       </View>
       <View  style={[tw`flex flex-row bg-gray-50`]}>
-        <View style={[tw`bg-gray-50`]}><Text onPress={handleClickPassword} style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>Password</Text></View>
-        <TouchableOpacity onPress={() => props.navigation.navigate("Profile")} style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-38 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Update</Text></TouchableOpacity>
+        <View style={[tw`bg-gray-50`]}><Text style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>Password</Text></View>
+        <TouchableOpacity onPress={handleClickPassword}  style={[tw`border-gray-100 bg-gray-100 font-mono font-semibold ml-38 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>Change</Text></TouchableOpacity>
       </View>
       <View>
       {isShownPassword && <Box3 />}
@@ -111,6 +111,9 @@ function Box(){
         placeholder="Last Name"
         autoComplete="name-suffix"
         style={[tw`rounded-sm border-2 border-gray-100 bg-white text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 py-1 font-bold`]} />
+
+    <TouchableOpacity  style={[tw` border-2 border-gray-100 bg-gray-100 font-mono font-semibold ml-7 mr-7 mt-2 py-1`]}><Text style={[tw`text-base text-center text-gray-500 font-bold font-mono`]}>Submit</Text></TouchableOpacity>
+
     </View>
       </>
   );
@@ -131,8 +134,10 @@ function Box1 (){
         autoComplete="email"
         keyboardType="email-address"
         style={[tw`rounded-sm border-2 border-gray-100 bg-white text-base text-gray-500 mt-2 ml-11 mr-12 pl-5 py-1 font-bold`]} />
+
+<TouchableOpacity  style={[tw` border-2 border-gray-100 bg-gray-100 font-mono font-semibold mt-2 ml-11 mr-12 py-1`]}><Text style={[tw`text-base text-center text-gray-500 font-bold font-mono`]}>Submit</Text></TouchableOpacity>
     </View>
-      
+   
       </>
   );
 
@@ -140,13 +145,14 @@ function Box1 (){
 function Box2 (){
   return (
     <><View>
-      <View style={[tw`flex flex-row mb-5`]} >
+      <View style={[tw`flex flex-row mb-2`]} >
         <Text style={[tw`rounded-sm border-2 border-gray-200 bg-gray-200 text-gray-500 text-center mt-2 ml-11 pl-5 px-5 py-3`]}>+62</Text>
       <TextInput
         placeholder="Phone Number"
         autoComplete="tel"
-        style={[tw`rounded-sm border-2 border-gray-100 bg-white text-base text-gray-500 mt-2 mr-17 px-25 pl-3 py-1 font-bold`]} />
+        style={[tw`rounded-sm border-2 border-gray-100 bg-white text-base text-gray-500 mt-2 mr-17.9 px-17 pl-3 py-1 font-bold`]} />
     </View>
+    <TouchableOpacity  style={[tw` border-2 border-gray-100 bg-gray-100 font-mono font-semibold ml-11 mr-13 mb-2 py-1`]}><Text style={[tw`text-base text-center text-gray-500 font-bold font-mono`]}>Submit</Text></TouchableOpacity>
     </View>
      
       </>
@@ -168,6 +174,7 @@ function Box3 (){
         secureTextEntry={true}
         style={[tw`rounded-sm border-2 border-gray-100 bg-white text-base text-gray-500 mt-2 ml-11 mr-12 pl-5 py-1 font-bold`]} />
     </View>
+    <TouchableOpacity  style={[tw` border-2 border-gray-100 bg-gray-100 font-mono font-semibold  mt-2 ml-11 mr-12 mb-2 py-1`]}><Text style={[tw`text-base text-center text-gray-500 font-bold font-mono`]}>Submit</Text></TouchableOpacity>
       </>
   );
 
