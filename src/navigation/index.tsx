@@ -8,7 +8,7 @@ import SpleshScreen from '../screen/SpleshScreen';
 import Profile from '../screen/Profile';
 import AuthScreen from './auth';
 import AppScreen from './app';
-import Scanner from '../screen/Scanner';
+import BarcodeScanner from '../screen/BarcodeScanner';
 
 function MyStackNavigator() {
   return (
@@ -32,6 +32,11 @@ function MyStackNavigator() {
         <Stack.Screen
           component={Profile}
           name="Profile"
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          component={BarcodeScanner}
+          name="BarcodeScanner"
           options={{headerShown: false}}
         />
       </Stack.Navigator>
