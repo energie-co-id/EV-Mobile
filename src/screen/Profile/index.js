@@ -112,7 +112,7 @@ function Box(){
         autoComplete="name-suffix"
         style={[tw`rounded-sm border-2 border-gray-100 bg-white text-base text-gray-500 mt-2 ml-7 mr-7 pl-5 py-1 font-bold`]} />
 
-    <TouchableOpacity  style={[tw` border-2 border-gray-100 bg-gray-100 font-mono font-semibold ml-7 mr-7 mt-2 py-1`]}><Text style={[tw`text-base text-center text-gray-500 font-bold font-mono`]}>Submit</Text></TouchableOpacity>
+    <TouchableOpacity style={[tw` border-2 border-gray-100 bg-gray-100 font-mono font-semibold ml-7 mr-7 mt-2 py-1`]}><Text style={[tw`text-base text-center text-gray-500 font-bold font-mono`]}>Submit</Text></TouchableOpacity>
 
     </View>
       </>
