@@ -16,7 +16,7 @@ import {
   // ActivityIndicator,
   // FlatList,
 } from 'react-native';
-
+import Icon from "react-native-vector-icons/MaterialIcons";
 import tw from 'twrnc';
 
 function Home(props) {
@@ -44,7 +44,7 @@ function Home(props) {
          <Text style={[tw`text-gray-500 text-lg font-normal ml-5`]}><Text style={[tw`text-gray-500 text-lg font-bold`]}>40.7</Text> KwH</Text>
         </View>
          <View style={[tw`border-l-2 border-gray-500 bg-gray-100 mb-2 ml-3`]}>
-         <TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}><Image style={[tw`h-17 w-17 ml-4 justify-center items-center`]} source={require('../../assets/charge.png')}/></TouchableOpacity> 
+         <TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}><Icon style={[tw`ml-5`]} name='power' size={50} color={'#86DC3D'} /></TouchableOpacity> 
          <Text style={[tw`text-gray-500 text-xl font-semibold mt-1 ml-4 mb-1`]}>Charge</Text>
         </View>
         </View>
