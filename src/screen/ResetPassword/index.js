@@ -50,7 +50,7 @@ function ResetPassword(props) {
   return (
     <ScrollView style={[tw`m-10`]} showsVerticalScrollIndicator={false}>
       <View>
-        <Text style={[tw`text-black text-left text-4xl font-mono font-bold mt-30`]}> Forgot Password</Text>
+        <Text style={[tw`text-black text-left text-4xl font-mono font-bold mt-30 ml-2`]}>Forgot{`\n`}Password</Text>
         <Text style={[tw`text-gray-500 text-left text-base font-mono mt-1 ml-2 mb-5`]}>We'll send a link to your email shortly</Text>
       </View>
       <View>
@@ -69,7 +69,7 @@ function ResetPassword(props) {
         {loading === true ? (
           <ActivityIndicator size="large" color="white" />
         ) : (
-          <Button title="Send" color={'#6B7280'} onPress={handlePassword} />
+          <Button title="Send" color={'#6B7280'} onPress={() => props.navigation.navigate("ForgotPassword")} />
         )}
       </View>
     </ScrollView>

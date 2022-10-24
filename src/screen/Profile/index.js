@@ -149,6 +149,8 @@ function Box2 (){
         <Text style={[tw`rounded-sm border-2 border-gray-200 bg-gray-200 text-gray-500 text-center mt-2 ml-11 pl-5 px-5 py-3`]}>+62</Text>
       <TextInput
         placeholder="Phone Number"
+        keyboardType="number-pad"
+        maxLength={12}
         autoComplete="tel"
         style={[tw`rounded-sm border-2 border-gray-100 bg-white text-base text-gray-500 mt-2 mr-17.9 px-17 pl-3 py-1 font-bold`]} />
     </View>

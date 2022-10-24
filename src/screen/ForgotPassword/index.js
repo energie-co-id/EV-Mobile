@@ -56,12 +56,12 @@ function ForgotPassword(props) {
   return (
     <ScrollView style={[tw`m-10`]} showsVerticalScrollIndicator={false}>
       <View>
-        <Text style={[tw`text-black text-left text-4xl font-mono font-bold mt-30`]}> Set Password</Text>
+        <Text style={[tw`text-black text-left text-4xl font-mono font-bold mt-30 ml-2`]}>Set Password</Text>
         <Text style={[tw`text-gray-500 text-left text-base font-mono mt-1 ml-2 mb-5`]}>Set your new password</Text>
       </View>
         <View>
           <TextInput
-            placeholder="Cek your email and copas code hire"
+            placeholder="Copy your code here"
             keyboardType="number-pad"
             maxLength={6}
             style={[tw`border-2 border-gray-100 bg-white text-gray-700 font-mono font-bold mt-2 pl-5`]}
@@ -70,7 +70,7 @@ function ForgotPassword(props) {
           />
         <View>
           <TextInput
-            placeholder="Write your password"
+            placeholder="Enter your new password"
             autoComplete="password"
             secureTextEntry={true}
             style={[tw`border-2 border-gray-100 bg-white text-gray-700 font-mono font-bold mt-2 pl-5`]}
@@ -80,7 +80,7 @@ function ForgotPassword(props) {
         </View>
         <View>
           <TextInput
-            placeholder="Write your confirm password"
+            placeholder="Re-enter your new password"
             autoComplete="password"
             secureTextEntry={true}
             style={[tw`border-2 border-gray-100 bg-white text-gray-700 font-mono font-bold mt-2 pl-5`]}
