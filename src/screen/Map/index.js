@@ -35,7 +35,7 @@ function Map(props) {
          style={[tw`w-7 h-7 ml-3 mt-2 mb-2`]}/></TouchableOpacity> 
       <TextInput
       placeholder="Looking for Charger Station"
-      style={[tw`text-gray-500 text-lg font-bold px-2 py-2 ml-1`]}
+      style={[tw`text-gray-400 text-base font-mono px-2 py-2 ml-1`]}
       /> 
       </View>
       </View>
