@@ -25,7 +25,7 @@ const TransactionDetail = (props) => {
      <View style={[tw`rounded-xl border-2 border-gray-50 bg-gray-50 mt-11 ml-5 w-81 h-111s`]}>
      <View style={[tw`border-b-2 border-gray-500 flex flex-col ml-5 mr-5 mb-1`]}>
      <Text style={[tw`text-center text-xl mt-7 font-bold`]}>Transaction Detail</Text>
-     <Text style={[tw`text-center text-base font-normal mb-2`]}>06/09/2022 18.00-19.00</Text>
+     <Text style={[tw`text-center text-base mt-1 mb-2 font-bold`]}><Text style={[tw`text-center text-base font-normal`]}>06/09/2022</Text> 18.00 - 19.00</Text>
      </View>
      <View style={[tw`flex flex-col`]}>
      
