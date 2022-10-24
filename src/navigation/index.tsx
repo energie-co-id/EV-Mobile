@@ -10,7 +10,7 @@ import AuthScreen from './auth';
 import AppScreen from './app';
 import BarcodeScanner from '../screen/BarcodeScanner';
 import Charge from '../screen/Charge'
-
+import TransactionDetail from '../screen/Detail'
 
 function MyStackNavigator() {
   return (
@@ -44,6 +44,11 @@ function MyStackNavigator() {
         <Stack.Screen
           component={Charge}
           name="Charge"
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          component={TransactionDetail}
+          name="TransactionDetail"
           options={{headerShown: false}}
         />
       </Stack.Navigator>

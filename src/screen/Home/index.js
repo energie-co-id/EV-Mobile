@@ -33,14 +33,14 @@ function Home(props) {
 
     <View style={[tw`h-170 bg-white`]}>
        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-3 mb-1 w-83 h-41`]}>
-       <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-3 ml-5 mb-2`]}>Konsumsi Energi Anda</Text>
+       <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-3 ml-5 mb-2`]}>Your Energy Consumption</Text>
         <View style={[tw`flex flex-row`]}>
         <View style={[tw`bg-gray-100 mb-2 w-1/3`]}>
-         <Text style={[tw`text-gray-500 text-lg font-bold mt-5 ml-5`]}>◉ Hari Ini</Text>
+         <Text style={[tw`text-gray-500 text-lg font-bold mt-5 ml-5`]}>◉ Today</Text>
          <Text style={[tw`text-gray-500 text-lg font-normal ml-7`]}><Text style={[tw`text-gray-500 text-lg font-bold`]}>5.4</Text> KwH</Text>
         </View>
         <View style={[tw`bg-gray-100 mb-2 w-1/3`]}>
-         <Text style={[tw`text-gray-500 text-lg font-bold mt-5 ml-2`]}>◉ Bulan Ini</Text>
+         <Text style={[tw`text-gray-500 text-lg font-bold mt-5 `]}>◉ This Month</Text>
          <Text style={[tw`text-gray-500 text-lg font-normal ml-5`]}><Text style={[tw`text-gray-500 text-lg font-bold`]}>40.7</Text> KwH</Text>
         </View>
          <View style={[tw`border-l-2 border-gray-500 bg-gray-100 mb-2 ml-3`]}>
@@ -50,8 +50,8 @@ function Home(props) {
         </View>
         </View>
         
-      <Text style={[tw`text-gray-500 text-2xl font-bold mt-2 ml-7`]}>Konsumsi Energi Tahun ini</Text>
-      <Text style={[tw`text-gray-500 text-base text-justify mt-2 mr-5 ml-7 mb-1`]}>Hemat pengeluaran Anda dengan monitor konsumsi energi tiap kali anda charging.</Text>
+      <Text style={[tw`text-gray-500 text-xl font-bold mt-2 ml-7`]}>Energy Consumption this Year</Text>
+      <Text style={[tw`text-gray-500 text-base text-justify mt-2 mr-5 ml-7 mb-1`]}>Save your expenses by monitoring energy consumption every time you charge.</Text>
      <TouchableOpacity style={[tw`rounded-xl bg-gray-100 h-91 w-83 mt-2 ml-3`]}></TouchableOpacity>
     </View>
     </ScrollView>
