@@ -17,12 +17,12 @@ import {
 const TransactionDetail = (props) => {
   return (
     <ScrollView>
-    <View style={[tw`flex flex-row bg-white`]}>
+    <View style={[tw`flex flex-row bg-gray-50 mt-2`]}>
         <TouchableOpacity onPress={() => props.navigation.navigate("History")}><Image style={[tw`h-5 w-5 mt-7.8 ml-5 mb-5`]} source={require('../../assets/back.png')} /></TouchableOpacity>
      <Text style={[tw`text-center text-2xl ml-15 mt-6 font-bold`]}> Your Invoice</Text>
      </View>
      <View style={[tw`h-171 bg-white`]}>
-     <View style={[tw`rounded-xl border-2 border-gray-50 bg-gray-50 mt-11 ml-5 w-81 h-111s`]}>
+     <View style={[tw`rounded-xl border-2 border-gray-100 bg-gray-100 mt-11 ml-5 w-81 h-111s`]}>
      <View style={[tw`border-b-2 border-gray-500 flex flex-col ml-5 mr-5 mb-1`]}>
      <Text style={[tw`text-center text-xl mt-7 font-bold`]}>Transaction Detail</Text>
      <Text style={[tw`text-center text-base mt-1 mb-2 font-bold`]}><Text style={[tw`text-center text-base font-normal`]}>06/09/2022</Text> 18.00 - 19.00</Text>
@@ -60,7 +60,7 @@ const TransactionDetail = (props) => {
    
      </View>
      </View>
-     <TouchableOpacity style={[tw`rounded-xl border-gray-100 bg-gray-100 font-mono font-semibold ml-5 mr-5 mt-5 py-2`]}><Text style={[tw`text-lg text-gray-500 font-bold font-mono ml-23`]}>Print your Invoice</Text></TouchableOpacity>
+     <TouchableOpacity style={[tw`rounded-xl border-gray-200 bg-gray-200 font-mono font-semibold ml-5 mr-5 mt-5 py-2`]}><Text style={[tw`text-lg text-gray-500 font-bold font-mono ml-23`]}>Print your Invoice</Text></TouchableOpacity>
      </View>
      </ScrollView>
      
