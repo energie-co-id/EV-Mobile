@@ -28,11 +28,11 @@ const Charge = (props) => {
   <View style={[tw`h-161 bg-white`]}>
     <View style={[tw`border-dashed rounded-xl border-2 border-gray-700 bg-gray-100 mt-29 ml-19 w-55 h-55`]}>
     </View>
-    <Text style={[tw`mt-11 ml-9 text-gray-500 font-semibold`]}>RFID</Text> 
+    <Text style={[tw`mt-21 ml-9 text-gray-500 font-semibold`]}>RFID</Text> 
     <TextInput
         placeholder="325FAA21D"
         style={[tw` border-b-2 rounded-sm border-gray-500 bg-white text-base text-gray-500 uppercase mt-2 ml-7 mr-7 pl-2 py-1 font-bold `]} />
-    <TouchableOpacity onPress={() => props.navigation.navigate("Live")} style={[tw`rounded-xl border-gray-200 bg-gray-200 font-mono font-semibold ml-3 mr-3 mt-5 py-2`]}><Text style={[tw`text-xl text-gray-700 font-bold font-mono ml-25`]}>Start Charging</Text></TouchableOpacity>
+    <TouchableOpacity onPress={() => props.navigation.navigate("Live")} style={[tw`rounded-xl border-gray-200 bg-gray-200 font-mono font-semibold ml-5 mr-5 mt-5 py-2`]}><Text style={[tw`text-xl text-gray-700 font-bold font-mono ml-25`]}>Start Charging</Text></TouchableOpacity>
  </View>
 </ScrollView>
   )
