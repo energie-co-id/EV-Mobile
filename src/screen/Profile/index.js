@@ -92,7 +92,7 @@ function Profile(props) {
       {isShownPassword && <Box3 />}
       </View>
       <Text style={[tw`text-gray-500 text-center text-xl font-bold font-mono mt-5 mb-3`]}>Your Stats of the Month</Text>
-      <TouchableOpacity style={[tw`rounded-xl bg-gray-100 w-81 h-81 ml-5 mb-5`]}></TouchableOpacity>
+      <TouchableOpacity style={[tw`rounded-xl bg-gray-200 w-81 h-81 ml-5 mb-5`]}></TouchableOpacity>
     </View>
     </ScrollView>
   );

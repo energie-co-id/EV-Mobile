@@ -60,7 +60,7 @@ const TransactionDetail = (props) => {
    
      </View>
      </View>
-     <TouchableOpacity style={[tw`rounded-xl border-gray-200 bg-gray-200 font-mono font-semibold ml-5 mr-5 mt-5 mb-24 py-2`]}><Text style={[tw`text-lg text-gray-500 font-bold font-mono ml-23`]}>Print your Invoice</Text></TouchableOpacity>
+     <TouchableOpacity style={[tw`rounded-xl border-gray-200 bg-gray-200  font-mono font-semibold ml-5 mr-5 mt-5 mb-24 py-2`]}><Text style={[tw`text-lg text-gray-500 font-bold font-mono ml-23`]}>Print your Invoice</Text></TouchableOpacity>
      </View>
      </ScrollView>
      

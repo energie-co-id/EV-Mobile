@@ -93,7 +93,7 @@ function ForgotPassword(props) {
         {loading === true ? (
           <ActivityIndicator size="large" color="white" />
         ) : (
-          <Button title="Submit" color={'#6B7280'} onPress={handleReset} />
+          <Button title="Submit" color={'#6B7280'} onPress={handleReset}/>
         )}
       </View>
     </ScrollView>
