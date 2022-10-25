@@ -26,9 +26,11 @@ const Charge = (props) => {
       <Text style={[tw`text-3xl text-center text-gray-700 ml-27 mt-7 mb-5 font-bold font-mono`]}>Scan</Text>
   </View>
   <View style={[tw`h-161 bg-white`]}>
+  <View style={[tw` rounded-xl bg-gray-100 w-100 h-100`]}>
     <View style={[tw`border-dashed rounded-xl border-2 border-gray-700 bg-gray-100 mt-29 ml-19 w-55 h-55`]}>
+      </View>
     </View>
-    <Text style={[tw`mt-21 ml-9 text-gray-500 font-semibold`]}>RFID</Text> 
+    <Text style={[tw`mt-11 ml-9 text-gray-500 font-semibold`]}>RFID</Text> 
     <TextInput
         placeholder="325FAA21D"
         style={[tw` border-b-2 rounded-sm border-gray-500 bg-white text-base text-gray-500 uppercase mt-2 ml-7 mr-7 pl-2 py-1 font-bold `]} />
