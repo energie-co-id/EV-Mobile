@@ -20,14 +20,13 @@ import {
 
 const Live = (props) => {
   return (
-    <ScrollView>
-   
+    <ScrollView showsVerticalScrollIndicator={false}>
     <View style={[tw`flex flex-row bg-white`]}>
      <TouchableOpacity onPress={() => props.navigation.navigate("Charge")}><Image style={[tw`h-5 w-5 mt-7.8 ml-5 mb-5`]} source={require('../../assets/back.png')} /></TouchableOpacity>
       <Text style={[tw`text-3xl text-center text-gray-700 ml-15 mt-7 mb-5 font-bold font-mono`]}>On Charging</Text>
     
      </View>
-     <View style={[tw`h-161 bg-white`]}>
+     <View style={[tw`h-full bg-white`]}>
      <Image style={[tw`w-81 h-81 mt-3 ml-5 mr-5`]} source={require('../../assets/test.jpg')}/>
      <View style={[tw`flex flex-row bg-white`]}>
 
@@ -44,7 +43,7 @@ const Live = (props) => {
      </View>
      
      </View>
-     <View style={[tw` rounded-full flex flex-col bg-gray-500 h-30 w-30 ml-33 mr-5 mt-5`]}>
+     <View style={[tw` rounded-full flex flex-col bg-gray-400 h-30 w-30 ml-33 mr-5 mt-5 mb-11`]}>
      <TouchableOpacity onPress={() => props.navigation.navigate("Live")}><Icon style={[tw`ml-3 mt-3`]} name='power-settings-new' size={95} color={'#ffff'} /></TouchableOpacity> 
         </View>
      

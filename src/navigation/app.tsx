@@ -23,6 +23,7 @@ function HomeStackScreen() {
         options={{headerShown: false}}
       />
       
+      
     </Stack.Navigator>
   );
 }

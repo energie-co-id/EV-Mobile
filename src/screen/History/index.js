@@ -21,7 +21,7 @@ import tw from 'twrnc';
 function History(props) {
 
   return (
-    <ScrollView>
+    <ScrollView showsVerticalScrollIndicator={false}>
       <View style={[tw`flex flex-row`]}>
       <Text style={[tw`text-gray-500 font-normal ml-11 mt-9`]}><Text style={[tw `text-3xl text-gray-500 font-bold`]}>History</Text>{`\n`}Present your charging record</Text>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image source={require('../../assets/logo.png')}

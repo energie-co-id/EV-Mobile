@@ -31,7 +31,7 @@ function Home(props) {
       <Text style={[tw `text-gray-500 text-xl ml-7 mt-1.5 font-mono font-bold`]}>EV Charging Hyundai</Text>
       <Text style={[tw `text-gray-500 text-sm ml-7 mb-5`]}>New Thinking, New Posibilities</Text>
 
-    <View style={[tw`h-170 bg-white`]}>
+    <View style={[tw`h-full bg-white`]}>
        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-3 mb-1 w-83 h-41`]}>
        <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-3 ml-5 mb-2`]}>Your Energy Consumption</Text>
         <View style={[tw`flex flex-row`]}>
@@ -52,7 +52,7 @@ function Home(props) {
         
       <Text style={[tw`text-gray-500 text-xl font-bold mt-2 ml-7`]}>Energy Consumption this Year</Text>
       <Text style={[tw`text-gray-500 text-base text-justify mt-2 mr-5 ml-7`]}>Save your expenses by monitoring energy consumption every time you charge.</Text>
-     <TouchableOpacity style={[tw`rounded-xl bg-gray-100 h-93 w-83 ml-3`]}></TouchableOpacity>
+     <TouchableOpacity style={[tw`rounded-xl bg-gray-100 w-85 h-85 ml-3 mb-5`]}></TouchableOpacity>
     </View>
     </ScrollView>
     
