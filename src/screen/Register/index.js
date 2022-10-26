@@ -71,7 +71,7 @@ function Register(props) {
         <View>
           <Image
             source={require('../../assets/logo.png')}
-            style={[tw`w-full h-70 justify-center items-center mt-1 mb-1`]}
+            style={[tw`w-full h-85 justify-center items-center mt-1 mb-1`]}
           />
         </View>
       <View>

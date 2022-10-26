@@ -82,7 +82,7 @@ function Login(props) {
      <View>
        <Image
          source={require('../../assets/logo.png')}
-         style={[tw`w-full h-70 justify-center items-center`]}
+         style={[tw`w-full h-85 justify-center items-center mb-5`]}
        />
      </View>
    </View>
