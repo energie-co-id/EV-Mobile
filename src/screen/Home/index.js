@@ -23,8 +23,8 @@ function Home(props) {
 
   return (
     <ScrollView>
-      <TouchableOpacity style={[tw`rounded-2xl bg-gray-300 h-60 m-5`]}>
-        <Text style={[tw `text-black text-lg text-center m-5`]}>
+      <TouchableOpacity style={[tw`rounded-2xl bg-gray-300 h-60 m-12`]}>
+        <Text style={[tw `text-black text-5xl text-center m-5`]}>
           Home
         </Text>
       </TouchableOpacity>
