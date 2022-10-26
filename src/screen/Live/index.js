@@ -51,8 +51,8 @@ function Live (props) {
      </View>
      
      </View>
-     <TouchableOpacity onPress={handleCondition} style={[tw`rounded-full flex flex-col ${condition === 'on' ? 'bg-green-100' : 'bg-gray-100'} h-30 w-30 ml-32 mr-5 mt-5 mb-11`]}>
-     <Icon style={[{ color: condition=== 'on' ? '#7fff94' : '#FF5C5C'  },tw`ml-3 mt-3`]} name='power-settings-new' size={95} />
+     <TouchableOpacity onPress={handleCondition} style={[tw`rounded-full flex flex-col ${condition === 'on' ? 'bg-green-100 border-4 border-green-500' : 'bg-gray-100'} h-30 w-30 ml-31 mr-5 mt-5 mb-11`]}>
+     <Icon style={[{ color: condition=== 'on' ? '#7fff94' : '#FF5C5C'},tw`${condition === 'on' ? 'ml-2  mt-2':'ml-3 mt-3'}`]} name='power-settings-new' size={95} />
         </TouchableOpacity>
      
     
