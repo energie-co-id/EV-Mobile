@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-function card() {
+function Card() {
   return (
     <View>
-      <Text>card</Text>
+      <Text>Card</Text>
     </View>
   );
 }
 
-export default card;
+export default Card;

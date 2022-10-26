@@ -4,7 +4,6 @@ import {redux_register} from '../../store/action/auth';
 import {
   View,
   Text,
-  StyleSheet,
   ScrollView,
   Image,
   TextInput,
@@ -13,49 +12,45 @@ import {
   ActivityIndicator,
 } from 'react-native';
 
+import tw from 'twrnc';
+
 function Register(props) {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [noTelp, setNoTelp] = useState('');
   const [mail, setMail] = useState('');
   const [password, setPassword] = useState('');
+  const [repeatPassword, setRepeatPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
 
   const auth = useSelector(state => state.auth);
 
   const [form, setForm] = useState({
-    firstName: '',
-    lastName: '',
-    noTelp: '',
     email: '',
     password: '',
+    repeatPassword:'',
   });
 
   useEffect(() => {
     setForm({
-      firstName: firstName,
-      lastName: lastName,
-      noTelp: noTelp,
       email: mail,
       password: password,
+      repeatPassword: repeatPassword,
     });
-  }, [firstName, lastName, mail, noTelp, password]);
+  }, [mail, password, repeatPassword]);
 
   const handleRegister = async e => {
     try {
       console.log(form);
       setLoading(true);
-      if (form.firstName === '') {
-        alert('firsname is required');
-      } else if (form.email === '') {
-        alert('email is required');
+      if (form.email === '') {
+        alert('Email is required');
       } else if (form.password === '') {
-        alert('password is required');
+        alert('Password is required');
+      } else if (form.repeatPassword === '') {
+        alert('You need to Repeat your password is required');
       } else {
-        const result = await dispatch(redux_register(form));
-        alert(result.value.data.msg);
-        props.navigation.navigate('Login');
+        // const result = await dispatch(redux_register(form));
+        // alert(result.value.data.msg);
+        props.navigation.navigate('Login', {screen:`Login`});
       }
       setLoading(false);
     } catch (error) {
@@ -69,140 +64,66 @@ function Register(props) {
     props.navigation.navigate('Login');
   };
   return (
-    <ScrollView style={regis.container} showsVerticalScrollIndicator={false}>
-      <View style={regis.row}>
+    <ScrollView style={[tw`m-8.8`]} showsVerticalScrollIndicator={false}>
         <View>
-          <Text style={regis.logo}>Ticketing</Text>
+        <Text style={[tw`text-gray-700 text-center text-4xl font-mono font-bold mt-5 mb-3`]}>Buat Akun Baru</Text>
         </View>
         <View>
           <Image
             source={require('../../assets/logo.png')}
-            style={regis.image}
+            style={[tw`w-full h-85 justify-center items-center mt-1 mb-1`]}
           />
         </View>
-      </View>
       <View>
-        <Text style={regis.title}> Sign Up </Text>
-        <Text style={regis.tag}> Fill your additional detail </Text>
-      </View>
-      <View style={regis.formulir}>
         <View>
-          <Text style={regis.name}> First Name </Text>
-          <TextInput
-            placeholder="Write your first Name"
-            style={regis.form}
-            onChangeText={newText => setFirstName(newText)}
-            defaultValue={firstName}
-          />
+        <TextInput
+         placeholder="Email Address"
+         autoComplete="email"
+         keyboardType="email-address"
+         style={[tw`border-2 border-gray-100 bg-white text-gray-700 font-mono font-bold mt-1 pl-5`]}
+         onChangeText={newText => setMail(newText)}
+         defaultValue={mail}
+       />
         </View>
         <View>
-          <Text style={regis.name}> Last Name </Text>
-          <TextInput
-            placeholder="Write your last Name"
-            style={regis.form}
-            onChangeText={newText => setLastName(newText)}
-            defaultValue={lastName}
-          />
-        </View>
-        <View>
-          <Text style={regis.name}> Phone Number </Text>
-          <TextInput
-            placeholder="Write your phone number"
-            autoComplete="tel"
-            keyboardType="numeric"
-            maxLength={15}
-            style={regis.form}
-            onChangeText={newText => setNoTelp(newText)}
-            defaultValue={noTelp}
-          />
-        </View>
-        <View>
-          <Text style={regis.name}> Email </Text>
-          <TextInput
-            placeholder="Write your email"
-            autoComplete="email"
-            keyboardType="email-address"
-            style={regis.form}
-            onChangeText={newText => setMail(newText)}
-            defaultValue={mail}
-          />
-        </View>
-        <View>
-          <Text style={regis.name}> Password </Text>
           <TextInput
             placeholder="Write your password"
             autoComplete="password"
             secureTextEntry={true}
-            style={regis.form}
+            style={[tw`border-2 border-gray-100 bg-white text-gray-700 font-mono font-bold mt-1.5 pl-5`]}
             onChangeText={newText => setPassword(newText)}
             defaultValue={password}
           />
         </View>
+        <View>
+          <TextInput
+            placeholder="Repeat your password"
+            autoComplete="password"
+            secureTextEntry={true}
+            style={[tw`border-2 border-gray-100 bg-white text-gray-300 font-mono font-bold mt-2 pl-5`]}
+            onChangeText={newText => setRepeatPassword(newText)}
+            defaultValue={repeatPassword}
+          />
+        </View>
+        <View>
+        <Text style={[tw`text-gray-700 text-justify font-mono mt-2 mb-1`]}>By registering, you confirm that you accept our Terms of Use and Privacy Policy </Text>
+        </View>
       </View>
-      <View style={regis.button}>
-        {loading === true ? (
-          <ActivityIndicator size="large" color="white" />
-        ) : (
-          <Button title="Sign Up" color={'#5F2EEA'} onPress={handleRegister} />
-        )}
-      </View>
-      <View style={regis.login}>
-        <Text>Already have an account?</Text>
+      <View style={[tw`border-gray-500 rounded-xl bg-gray-500 p-1 font-mono font-semibold mt-3 mb-1`]}>
+     {loading === true ? (
+       <ActivityIndicator size="large" color="white" />
+     ) : (
+       <Button title="Register" color={'#6B7280'} onPress={handleLogin} />
+     )}
+   </View>
+      <View style={[tw`justify-center flex-row`]}>
+        <Text style={[tw`font-mono text-gray-500 mr-1`]}>Already have an account?</Text>
         <TouchableOpacity onPress={handleLogin}>
-          <Text style={regis.in}> {'  '}Login</Text>
+          <Text style={[tw`text-gray-700 font-mono`]}>Login</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
   );
 }
-
-const regis = StyleSheet.create({
-  container: {
-    margin: 25,
-  },
-  row: {
-    flexDirection: 'row',
-    marginBottom: 30,
-    marginTop: 30,
-  },
-  logo: {
-    fontSize: 35,
-    color: '#5F2EEA',
-    fontWeight: '600',
-    padding: 5,
-  },
-  title: {
-    fontSize: 30,
-    color: 'black',
-    fontWeight: '500',
-  },
-  image: {width: 50, height: 50, top: 6, padding: 5},
-  tag: {fontSize: 15, color: '#8692A6', fontWeight: '300', marginTop: 5},
-  formulir: {marginTop: 20},
-  name: {fontSize: 15, marginTop: 25},
-  form: {
-    backgroundColor: '#FFFFFF',
-    borderColor: '#8692A6',
-    borderRadius: 8,
-    borderWidth: 1,
-    padding: 15,
-    marginTop: 10,
-  },
-  button: {
-    backgroundColor: '#5F2EEA',
-    color: 'white',
-    borderRadius: 10,
-    marginTop: 40,
-    padding: 5,
-  },
-  login: {
-    justifyContent: 'center',
-    flexDirection: 'row',
-    margin: 15,
-  },
-  in: {
-    color: '#5F2EEA',
-  },
-});
 
 export default Register;

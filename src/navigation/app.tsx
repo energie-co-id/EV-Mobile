@@ -10,6 +10,8 @@ import History from '../screen/History';
 import Map from '../screen/Map';
 import TabContent from '../component/TabContent'
 
+
+
 const Tab = createBottomTabNavigator();
 
 function HomeStackScreen() {
@@ -20,6 +22,8 @@ function HomeStackScreen() {
         name="HomeStack"
         options={{headerShown: false}}
       />
+      
+      
     </Stack.Navigator>
   );
 }
