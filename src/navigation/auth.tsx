@@ -28,7 +28,7 @@ function AuthNavigator() {
         component={ForgotPassword}
         name="ForgotPassword"
         options={{headerShown: false}}
-      />
+      />  
     </Stack.Navigator>
   );
 }

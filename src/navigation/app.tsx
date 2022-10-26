@@ -9,6 +9,9 @@ import Home from '../screen/Home';
 import History from '../screen/History';
 import Map from '../screen/Map';
 import TabContent from '../component/TabContent'
+import BarcodeScanner from '../screen/BarcodeScanner';
+import Charge from '../screen/Charge';
+import Live from '../screen/Live';
 
 const Tab = createBottomTabNavigator();
 
@@ -20,6 +23,8 @@ function HomeStackScreen() {
         name="HomeStack"
         options={{headerShown: false}}
       />
+      
+      
     </Stack.Navigator>
   );
 }
@@ -30,6 +35,21 @@ function MapStackScreen() {
       <Stack.Screen
         component={Map}
         name="MapStack"
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        component={BarcodeScanner}
+        name="BarcodeScanner"
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        component={Charge}
+        name="Charge"
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        component={Live}
+        name="Live"
         options={{headerShown: false}}
       />
     </Stack.Navigator>
