@@ -22,8 +22,8 @@ const TransactionDetail = (props) => {
      <Text style={[tw`text-center text-2xl ml-19 mt-6 font-bold`]}> Your Invoice</Text>
      </View>
      <View style={[tw`h-full bg-white justify-center items-center`]}>
-     <View style={[tw`rounded-xl border-2 border-gray-100 bg-gray-100 mt-11 ml-5 w-81 h-111`]}>
-     <View style={[tw`border-b-2 border-gray-500 flex flex-col ml-5 mr-5 mb-1`]}>
+     <View style={[tw`rounded-xl border-2 border-gray-100 bg-gray-100 mt-11 w-81 h-111`]}>
+     <View style={[tw`border-b-2 border-gray-500 flex flex-col ml-5 mr-5 mb-2`]}>
      <Text style={[tw`text-center text-xl mt-7 font-bold`]}>Transaction Detail</Text>
      <Text style={[tw`text-center text-base mt-1 mb-2 font-bold`]}><Text style={[tw`text-center text-base font-normal`]}>06/09/2022</Text> 18.00 - 19.00</Text>
      </View>
@@ -60,7 +60,7 @@ const TransactionDetail = (props) => {
    
      </View>
      </View>
-     <TouchableOpacity style={[tw`rounded-xl border-gray-200 bg-gray-200 w-85 font-mono font-semibold ml-5 mt-5 mb-53 py-2`]}><Text style={[tw`text-lg text-gray-500 text-center font-bold font-mono `]}>Print your Invoice</Text></TouchableOpacity>
+     <TouchableOpacity style={[tw`rounded-xl border-gray-200 bg-gray-200 w-81 font-mono font-semibold  mt-5 mb-53 py-2`]}><Text style={[tw`text-lg text-gray-500 text-center font-bold font-mono `]}>Print your Invoice</Text></TouchableOpacity>
      </View>
      </ScrollView>
      
