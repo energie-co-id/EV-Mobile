@@ -26,15 +26,27 @@ function Profile(props) {
   const [isShownPassword, setIsShownPassword] = useState(false);
   const handleClick = event => {
     setIsShown(current => !current);
+    setIsShownEmail(false);
+    setIsShownNumber(false);
+    setIsShownPassword(false);
   };
   const handleClickEmail = event => {
     setIsShownEmail(current => !current);
+    setIsShown(false);
+    setIsShownNumber(false);
+    setIsShownPassword(false);
   };
   const handleClickNumber = event => {
     setIsShownNumber(current => !current);
+    setIsShown(false);
+    setIsShownPassword(false);
+    setIsShownEmail(false);
   };
   const handleClickPassword = event => {
     setIsShownPassword(current => !current);
+    setIsShown(false);
+    setIsShownEmail(false);
+    setIsShownNumber(false);
   };
   
 
@@ -66,27 +78,27 @@ function Profile(props) {
       <View style={[tw`h-full bg-gray-50`]}>
       <View  style={[tw`flex flex-row bg-gray-100`]}>
         <View style={[tw`bg-gray-100`]}><Text style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>Hyundai</Text></View>
-        <TouchableOpacity onPress={handleClick} style={[tw`border-gray-100 bg-gray-200 font-mono font-semibold ml-50 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>{isShown ? 'Cancel' : 'Change'}</Text></TouchableOpacity>
+        <TouchableOpacity onPress={handleClick} style={[tw`border-gray-100 bg-gray-200 font-mono font-semibold ml-50 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold ml-1`]}>{isShown ? 'Cancel' : 'Change'}</Text></TouchableOpacity>
       </View>
       {isShown && <Box />}
     
       <View  style={[tw`flex flex-row bg-gray-100`]}>
         <View style={[tw`bg-gray-100`]}><Text style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>Blecky@gmail.com</Text></View>
-        <TouchableOpacity  onPress={handleClickEmail} style={[tw`border-gray-100 bg-gray-200 font-mono font-semibold ml-27 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>{isShownEmail ? 'Cancel' : 'Change'}</Text></TouchableOpacity>
+        <TouchableOpacity  onPress={handleClickEmail} style={[tw`border-gray-100 bg-gray-200 font-mono font-semibold ml-27 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold ml-1`]}>{isShownEmail ? 'Cancel' : 'Change'}</Text></TouchableOpacity>
       </View>
       <View>
       {isShownEmail && <Box1 />}
       </View>
       <View  style={[tw`flex flex-row bg-gray-100`]}>
         <View style={[tw`bg-gray-100`]}><Text  style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>+62895990090090</Text></View>
-        <TouchableOpacity onPress={handleClickNumber} style={[tw`border-gray-100 bg-gray-200 font-mono font-semibold ml-27 mt-2 mb-3 p-2  `]}><Text style={[tw`text-gray-500 font-bold`]}>{isShownNumber ? 'Cancel' : 'Change'}</Text></TouchableOpacity>
+        <TouchableOpacity onPress={handleClickNumber} style={[tw`border-gray-100 bg-gray-200 font-mono font-semibold ml-27 mt-2 mb-3 p-2  `]}><Text style={[tw`text-gray-500 font-bold ml-1`]}>{isShownNumber ? 'Cancel' : 'Change'}</Text></TouchableOpacity>
       </View>
       <View>
       {isShownNumber && <Box2 />}
       </View>
       <View  style={[tw`flex flex-row bg-gray-100`]}>
         <View style={[tw`bg-gray-100`]}><Text style={[tw`mt-2 text-gray-500 text-lg font-bold ml-5 pl-5`]}>Password</Text></View>
-        <TouchableOpacity onPress={handleClickPassword}  style={[tw`border-gray-100 bg-gray-200 font-mono font-semibold ml-46 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold`]}>{isShownPassword ? 'Cancel' : 'Change'}</Text></TouchableOpacity>
+        <TouchableOpacity onPress={handleClickPassword}  style={[tw`border-gray-100 bg-gray-200 font-mono font-semibold ml-46 mt-2 mb-3 p-2 `]}><Text style={[tw`text-gray-500 font-bold ml-1`]}>{isShownPassword ? 'Cancel' : 'Change'}</Text></TouchableOpacity>
       </View>
       <View>
       {isShownPassword && <Box3 />}
