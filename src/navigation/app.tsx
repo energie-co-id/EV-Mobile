@@ -9,8 +9,9 @@ import Home from '../screen/Home';
 import History from '../screen/History';
 import Map from '../screen/Map';
 import TabContent from '../component/TabContent'
-
-
+import BarcodeScanner from '../screen/BarcodeScanner';
+import Charge from '../screen/Charge';
+import Live from '../screen/Live';
 
 const Tab = createBottomTabNavigator();
 
@@ -34,6 +35,21 @@ function MapStackScreen() {
       <Stack.Screen
         component={Map}
         name="MapStack"
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        component={BarcodeScanner}
+        name="BarcodeScanner"
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        component={Charge}
+        name="Charge"
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        component={Live}
+        name="Live"
         options={{headerShown: false}}
       />
     </Stack.Navigator>
@@ -60,23 +76,17 @@ function AppNavigator() {
         headerShown:false
       }}>
       <Tab.Screen 
+        name="Map" 
+        component={MapStackScreen}
+        options={{
+          tabBarLabel: 'Station',
+        }}
+      />
+      <Tab.Screen 
         name="Home" 
         component={HomeStackScreen}
         options={{
           tabBarLabel: 'Home',
-          tabBarIcon: ({color, focused}) => (
-            <Icon name='home' size={focused ? 30 : 25} color={color} />
-          )
-        }}
-      />
-      <Tab.Screen 
-        name="Map" 
-        component={MapStackScreen}
-        options={{
-          tabBarLabel: 'Find Station',
-          tabBarIcon: ({color, focused}) => (
-            <Icon name='ev-station' size={focused ? 30 : 25} color={color} />
-          )
         }}
       />
       <Tab.Screen 
@@ -84,9 +94,6 @@ function AppNavigator() {
         component={HistoryStackScreen}
         options={{
           tabBarLabel: 'History',
-          tabBarIcon: ({color, focused}) => (
-            <Icon name='history-edu' size={focused ? 30 : 25} color={color} />
-          )
         }}
       />
     </Tab.Navigator>

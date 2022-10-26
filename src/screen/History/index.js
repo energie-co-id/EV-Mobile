@@ -7,6 +7,7 @@ import {
   Text,
   // StyleSheet,
   TouchableOpacity,
+  TouchableOpacityBase,
   // Button,
   ScrollView,
   TextInput,
@@ -19,6 +20,13 @@ import {
 import tw from 'twrnc';
 
 function History(props) {
+  const value = [
+    {kwh : 100, date: '14-10-2022', location: 'Tebet'},
+    {kwh : 110, date: '13-10-2022', location: 'Kuningan'},
+    {kwh : 90, date: '12-10-2022', location: 'Manggarai'},
+    {kwh : 80, date: '11-10-2022', location: 'Tebet'},
+    {kwh : 120, date: '10-10-2022', location: 'BSD'},
+  ]
 
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
