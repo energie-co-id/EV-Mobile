@@ -22,15 +22,15 @@ function Map(props) {
 
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
-      <View style={[tw`flex flex-row`]}>
-      <Text style={[tw`text-gray-500 font-normal ml-7 mt-9`]}><Text style={[tw `text-3xl text-gray-500 text-center font-bold`]}>Location</Text>{`\n`}This located EV Charging Nearby</Text>
+      <View style={[tw`flex flex-row justify-center items-center`]}>
+      <Text style={[tw`text-gray-500 text-center font-normal ml-3 mt-3`]}><Text style={[tw `text-3xl text-gray-500 text-center font-bold`]}>Location</Text>{`\n`}This located EV Charging Nearby</Text>
         <TouchableOpacity onPress={() => props.navigation.navigate("Profile")}><Image source={require('../../assets/logo.png')}
-         style={[tw`w-20 h-20 ml-3 mt-5 mb-5`]}/></TouchableOpacity>
+         style={[tw`w-20 h-20 ml-3 mt-7 mb-7`]}/></TouchableOpacity>
       </View> 
       <View style={[tw`h-full bg-white`]}>
       <View style={[tw`flex flex-col`]}>
       <View>
-      <View style={[tw`flex flex-row rounded-xl bg-gray-100 mt-5 ml-5 w-81 h-11`]}>
+      <View style={[tw`flex flex-row rounded-xl bg-gray-100 mt-5 ml-5 w-95 h-11`]}>
       <TouchableOpacity onPress={() => props.navigation.navigate("Map")}><Image source={require('../../assets/search.png')}
          style={[tw`w-7 h-7 ml-3 mt-2 mb-2`]}/></TouchableOpacity> 
       <TextInput
@@ -39,7 +39,7 @@ function Map(props) {
       /> 
       </View>
       </View>
-      <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 w-81`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
+      <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 w-95`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
           <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-1 ml-5`]}>Serpong, Test</Text>
           <Text style={[tw`text-gray-500 text-sm font-normal bg-gray-100 ml-5`]}>Serpong, Test</Text>
         <View style={[tw`bg-gray-100 ml-0.21`]}>
@@ -48,7 +48,7 @@ function Map(props) {
         </TouchableOpacity>
         </View>
 
-        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 w-81`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
+        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 w-95`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
           <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-1 ml-5`]}>Serpong, Test</Text>
           <Text style={[tw`text-gray-500 text-sm font-normal bg-gray-100 ml-5`]}>Serpong, Test</Text>
         <View style={[tw`bg-gray-100 ml-0.21`]}>
@@ -57,7 +57,7 @@ function Map(props) {
         </TouchableOpacity>
         </View>
 
-        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 w-81`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
+        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 w-95`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
           <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-1 ml-5`]}>Serpong, Test</Text>
           <Text style={[tw`text-gray-500 text-sm font-normal bg-gray-100 ml-5`]}>Serpong, Test</Text>
         <View style={[tw`bg-gray-100 ml-0.21`]}>
@@ -66,7 +66,7 @@ function Map(props) {
         </TouchableOpacity>
         </View>
 
-        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 w-81`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
+        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 w-95`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
           <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-1 ml-5`]}>Serpong, Test</Text>
           <Text style={[tw`text-gray-500 text-sm font-normal bg-gray-100 ml-5`]}>Serpong, Test</Text>
         <View style={[tw`bg-gray-100 ml-0.21`]}>
@@ -75,7 +75,7 @@ function Map(props) {
         </TouchableOpacity>
         </View>
 
-        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 w-81`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
+        <View style={[tw`rounded-xl bg-gray-100 mt-5 ml-5 w-95`]}><TouchableOpacity onPress={() => props.navigation.navigate("BarcodeScanner")}>
           <Text style={[tw`text-gray-500 text-2xl font-bold bg-gray-100 mt-1 ml-5`]}>Serpong, Test</Text>
           <Text style={[tw`text-gray-500 text-sm font-normal bg-gray-100 ml-5`]}>Serpong, Test</Text>
         <View style={[tw`bg-gray-100 ml-0.21 mb-5`]}>
