@@ -59,12 +59,7 @@ LINK_CLOUDINARY: "https://res.cloudinary.com/fazztrack/image/upload/v1655102148/
 ## 🔎 Preview Pages
 
 <span align="center">
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/VS31Ld4/Splash-Screen.png" alt="Splash-Screen" border="0" /></a>
-<a href="https://ibb.co/pfCzwjz"><img src="https://i.ibb.co/fkmpFdp/Login.png" alt="08-06-2022-16-39-06-REC" border="0"></a>
-<a href="https://ibb.co/JvxfhY2"><img src="https://i.ibb.co/8rzWhy2/Screenshot-2022-06-22-00-23-09-10-73bc8a387918a6dc24391eace3f66458.jpg" alt="Screenshot-2022-06-22-00-23-09-10-73bc8a387918a6dc24391eace3f66458" border="0" /></a>
-<a href="https://ibb.co/SsjdSKr"><img src="https://i.ibb.co/TvfbyHL/Screenshot-2022-06-22-00-23-33-55-73bc8a387918a6dc24391eace3f66458.jpg" alt="Screenshot-2022-06-22-00-23-33-55-73bc8a387918a6dc24391eace3f66458" border="0" /></a>
-<a href="https://ibb.co/Yyk4Kqk"><img src="https://i.ibb.co/yYymMby/Screenshot-2022-06-22-00-22-50-27-73bc8a387918a6dc24391eace3f66458.jpg" alt="Screenshot-2022-06-22-00-22-50-27-73bc8a387918a6dc24391eace3f66458" border="0" /></a>
-<br>
+
 </span>
 
 <br>
